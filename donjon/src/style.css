@@ -94,7 +94,7 @@ main {
 .scrollTopArrow {
     width: 75px;
     height: 80px;
-    background-image: url("src/files/Arrow_up.png");
+    background-image: url("files/Arrow_up.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -176,15 +176,15 @@ main {
 }
 
 #firstImage {
-    background-image: url("src/files/restaurant.jpg");
+    background-image: url("files/restaurant.jpg");
 }
 
 #secondImage {
-    background-image: url("src/files/hotel.jpg");
+    background-image: url("files/hotel.jpg");
 }
 
 #thirdImage {
-    background-image: url("src/files/pool.jpg");
+    background-image: url("files/pool.jpg");
 }
 
 .image-transfer div:hover {
@@ -204,7 +204,7 @@ main {
 .our-history {
     display: flex;
     flex-direction: column;
-    background-image: url("src/files/feature-background.jpg");
+    background-image: url("files/feature-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -424,39 +424,39 @@ main {
 }
 
 .first-first > div:nth-child(1) {
-    background-image: url("./icons/leaf-solid.svg");
+    background-image: url("icons/leaf-solid.svg");
 }
 
 .first-second > div:nth-child(1) {
-    background-image: url("./icons/eye-solid.svg");
+    background-image: url("icons/eye-solid.svg");
 }
 
 .first-third > div:nth-child(1) {
-    background-image: url("./icons/knight.svg");
+    background-image: url("icons/knight.svg");
 }
 
 .second-first > div:nth-child(1) {
-    background-image: url("./icons/price&quality.svg");
+    background-image: url("icons/price&quality.svg");
 }
 
 .second-second > div:nth-child(1) {
-    background-image: url("./icons/location.svg");
+    background-image: url("icons/location.svg");
 }
 
 .second-third > div:nth-child(1) {
-    background-image: url("./icons/staff.svg");
+    background-image: url("icons/staff.svg");
 }
 
 .third-first > div:nth-child(1) {
-    background-image: url("./icons/dishes.svg");
+    background-image: url("icons/dishes.svg");
 }
 
 .third-second > div:nth-child(1) {
-    background-image: url("./icons/wifi-solid.svg");
+    background-image: url("icons/wifi-solid.svg");
 }
 
 .third-third > div:nth-child(1) {
-    background-image: url("./icons/graphql.svg");
+    background-image: url("icons/graphql.svg");
 }
 
 .first-first {

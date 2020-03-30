@@ -94,7 +94,7 @@ main {
 .scrollTopArrow {
     width: 75px;
     height: 80px;
-    background-image: url("Arrow_up.png");
+    background-image: url("src/files/Arrow_up.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -176,15 +176,15 @@ main {
 }
 
 #firstImage {
-    background-image: url("restaurant.jpg");
+    background-image: url("src/files/restaurant.jpg");
 }
 
 #secondImage {
-    background-image: url("hotel.jpg");
+    background-image: url("src/files/hotel.jpg");
 }
 
 #thirdImage {
-    background-image: url("pool.jpg");
+    background-image: url("src/files/pool.jpg");
 }
 
 .image-transfer div:hover {
@@ -204,7 +204,7 @@ main {
 .our-history {
     display: flex;
     flex-direction: column;
-    background-image: url("feature-background.jpg");
+    background-image: url("src/files/feature-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }

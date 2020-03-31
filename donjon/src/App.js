@@ -1,23 +1,21 @@
 import React from "react";
 import "./App.css";
-// import {Route} from "react-router-dom";
-import MainContainer from "./Pages/main_page/components/Main/MainContainer";
-import Main from "./Pages/main_page/components/Main/Main";
+import BasisContainer from "./Page Structure/Basis/BasisContainer";
+import {Route} from "react-router-dom";
+import MainPageContainer from "./Page Structure/Pages content/main_page/MainPageContainer";
+import FooterContainer from "./Page Structure/Footer/FooterContainer";
+
 
 const App = (props) => {
   return (
 
       <div className="app-wrapper">
-        {/*<Header/>*/}
-        {/*<Progress/>*/}
-
-        {/*<div className="app-wrapper-content">*/}
-        {/*  <Route path="/main" render={*/}
-        {/*    () => <MainContainer/>}/>*/}
-        {/*</div>*/}
-        <Main/>
-        {/*<MainContainer/>*/}
-        {/*<Footer/>*/}
+        <BasisContainer/>
+        <div className="app-wrapper-content">
+          <Route path="/main" render={
+            () => <MainPageContainer/>}/>
+        </div>
+        <FooterContainer/>
       </div>
 
   );

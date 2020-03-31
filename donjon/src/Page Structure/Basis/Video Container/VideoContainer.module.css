@@ -1,0 +1,21 @@
+/*----------------------------VIDEO-----------------------------------------*/
+
+.main_video {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    /*height: 100vh;*/
+    position: absolute;
+}
+
+
+
+.overlay {
+    height: 100vh;
+}
+
+.video_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}

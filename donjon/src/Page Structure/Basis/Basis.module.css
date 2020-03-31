@@ -1,0 +1,9 @@
+.video_and_menu {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.overlay {
+    height: 100vh;
+}

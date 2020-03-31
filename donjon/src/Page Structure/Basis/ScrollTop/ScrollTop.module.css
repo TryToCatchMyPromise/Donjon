@@ -1,0 +1,33 @@
+/*----------------------------SCROLL TOP-----------------------------------------*/
+
+.scrollTop {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50vh;
+    height: 50vh;
+    /*!*background-color: purple;*!*/
+    left: -40vh;
+    top: 25vh;
+    z-index: 5;
+    border-radius: 75%;
+    opacity: 50%;
+    transition: all 0.5s ease-in;
+    transform: scale(0.1, 0.1);
+}
+
+.scrollTopOnmousemove {
+    background-color: lime;
+    transform: scale(1, 1);
+    transition: all 0.5s ease-in;
+}
+
+.scrollTopArrow {
+    width: 75px;
+    height: 80px;
+    background-image: url("../../../../src/files/Arrow_up.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

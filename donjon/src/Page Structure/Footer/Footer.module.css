@@ -1,0 +1,87 @@
+/*----------------------------CONTACTS-----------------------------------------*/
+
+.contacts_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid orange;
+}
+
+.phones_and_emails {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    border: 1px solid green;
+}
+
+.map {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.map_container {
+    flex: 1 1;
+    border: 1px solid blue;
+}
+
+.map_container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.map_info {
+    flex: 1 1;
+    border: 1px solid tomato;
+}
+
+.phones_and_emails_container {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 70%;
+    font-size: 6vh;
+}
+
+.phones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1;
+}
+
+.phones_item {
+    flex: 1 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emails_item {
+    flex: 1 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1;
+}
+
+.phones_and_emails span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section_name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10vh;
+    flex: 1 1 30%;
+}

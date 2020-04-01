@@ -1,0 +1,123 @@
+/*------------------------------OUR-FEATURES---------------------------------------*/
+
+.our_features_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*margin: 10vh 0 10vh 0;*/
+    height: 100vh;
+    font-size: 3vh;
+}
+
+.our_features_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 90vh;
+    width: 90vh;
+    border: 1px solid deeppink;
+    /*background-color: gold;*/
+}
+
+.our_features_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 28vh;
+    height: 28vh;
+    background-color: antiquewhite;
+    /*margin: 2vh;*/
+    text-align: center;
+    transition-property: flex, opacity, font-size;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+    border-radius: 15%;
+}
+
+.op {
+    opacity: 0.3;
+}
+
+.our_features_icon {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 2vh;
+    height: 8vh;
+    width: 8vh;
+}
+
+.first_first > div:nth-child(1) {
+    background-image: url("../../../../icons/leaf-solid.svg");
+}
+
+.first_second > div:nth-child(1) {
+    background-image: url("../../../../icons/eye-solid.svg");
+}
+
+.first_third > div:nth-child(1) {
+    background-image: url("../../../../icons/knight.svg");
+}
+
+.second_first > div:nth-child(1) {
+    background-image: url("../../../../icons/price&quality.svg");
+}
+
+.second_second > div:nth-child(1) {
+    background-image: url("../../../../icons/location.svg");
+}
+
+.second_third > div:nth-child(1) {
+    background-image: url("../../../../icons/staff.svg");
+}
+
+.third_first > div:nth-child(1) {
+    background-image: url("../../../../icons/dishes.svg");
+}
+
+.third_second > div:nth-child(1) {
+    background-image: url("../../../../icons/wifi-solid.svg");
+}
+
+.third_third > div:nth-child(1) {
+    background-image: url("../../../../icons/graphql.svg");
+}
+
+.first_first {
+    background-color: red;
+}
+
+.first_second {
+    background-color: blue;
+}
+
+.first_third {
+    background-color: yellow;
+}
+
+.second_first {
+    background-color: #b3d4fc;
+
+}
+
+.second_second {
+    background-color: silver;
+}
+
+.second_third {
+    background-color: cornflowerblue;
+}
+
+.third_first {
+    background-color: darkblue;
+}
+
+.third_second {
+    background-color: deeppink;
+}
+
+.third_third {
+    background-color: lawngreen;
+}

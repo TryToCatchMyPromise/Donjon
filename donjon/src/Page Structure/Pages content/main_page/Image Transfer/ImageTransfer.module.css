@@ -45,30 +45,25 @@
 }
 
 .firstImage {
-    background-image: url("restaurant2.jpg");
+    background-image: url("../../../../files/restaurant.jpg");
 }
 
-#firstImage {
-    /*background-image: url("../../../../files/restaurant.jpg");*/
-    background-image: url("restaurant2.jpg");
-}
-
-#secondImage {
+.secondImage {
     background-image: url("../../../../files/hotel.jpg");
 }
 
-#thirdImage {
+.thirdImage {
     background-image: url("../../../../files/pool.jpg");
 }
 
-.image-transfer div:hover {
+.image_transfer div:hover {
     flex: 1 1 60%;
 }
 
-.image-transfer-flex:hover > div {
+.image_transfer_flex:hover > div {
     opacity: 0.5;
 }
-.image-transfer-flex:hover > div:hover {
+.image_transfer_flex:hover > div:hover {
     opacity: 1;
     font-size: 6vh;
 }

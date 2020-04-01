@@ -3,24 +3,24 @@ import classes from "./AboutUs.module.css";
 
 const AboutUs = () => {
   return (
-      <section className="about-us-block" id="about-us">
-        <div className="about-us-column about-us-left ">
-          <div className="about-us-items about-us-left-item">Этот блок выезжает слева</div>
+      <section className={classes.about_us_block}>
+        <div className={classes.about_us_column + ' ' + classes.about_us_left}>
+          <div className={classes.about_us_items + ' ' + classes.about_us_left_item}>Этот блок выезжает слева</div>
         </div>
-        <div className="about-us-column about-us-right">
-          <div className="about-us-items about-us-right-item">Этот блок выезжает справа</div>
+        <div className={classes.about_us_column + ' ' + classes.about_us_right}>
+          <div className={classes.about_us_items + ' ' + classes.about_us_right_item}>Этот блок выезжает справа</div>
         </div>
-        <div className="about-us-column about-us-left ">
-          <div className="about-us-items about-us-left-item">Этот блок выезжает слева</div>
+        <div className={classes.about_us_column + ' ' + classes.about_us_left}>
+          <div className={classes.about_us_items + ' ' + classes.about_us_left_item}>Этот блок выезжает слева</div>
         </div>
-        <div className="about-us-column about-us-right">
-          <div className="about-us-items about-us-right-item">Этот блок выезжает справа</div>
+        <div className={classes.about_us_column + ' ' + classes.about_us_right}>
+          <div className={classes.about_us_items + ' ' + classes.about_us_right_item}>Этот блок выезжает справа</div>
         </div>
-        <div className="about-us-column about-us-left ">
-          <div className="about-us-items about-us-left-item">Этот блок выезжает слева</div>
+        <div className={classes.about_us_column + ' ' + classes.about_us_left}>
+          <div className={classes.about_us_items + ' ' + classes.about_us_left_item}>Этот блок выезжает слева</div>
         </div>
-        <div className="about-us-column about-us-right">
-          <div className="about-us-items about-us-right-item">Этот блок выезжает справа</div>
+        <div className={classes.about_us_column + ' ' + classes.about_us_right}>
+          <div className={classes.about_us_items + ' ' + classes.about_us_right_item}>Этот блок выезжает справа</div>
         </div>
       </section>
   );

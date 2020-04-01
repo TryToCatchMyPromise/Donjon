@@ -12,7 +12,7 @@ const ImageTransfer = () => {
           <div id="secondImage" className={classes.image_transfer_items + ' ' + classes.secondImage}>
             <div className={classes.image_transfer_item_name}>Гостиница</div>
           </div>
-          <div id="thirdImage" className={classes.image_transfer_items}>
+          <div id="thirdImage" className={classes.image_transfer_items + ' ' + classes.thirdImage}>
             <div className={classes.image_transfer_item_name}>Услуги</div>
           </div>
         </div>

@@ -1,0 +1,28 @@
+/*-----------------------------HISTORY----------------------------------------*/
+
+.our_history {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../../../files/feature-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.history_column {
+    display: flex;
+    flex-direction: row;
+}
+
+.history_row {
+    /*background-color: red;*/
+    flex: 1;
+    border: 1px solid green;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh 2vw 2vh 2vw;
+    /*mix-blend-mode: color-burn;*/
+    color: darkmagenta;
+    font-size: 5vh;
+}

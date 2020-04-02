@@ -1,0 +1,25 @@
+.flex_container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 200px;
+    border: 1px solid orange;
+    left: 0px;
+    top: 35%;
+}
+
+.circle {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    margin: 4px;
+}
+
+.line {
+    border-left: 1.2px solid white;
+    height: 30px;
+}

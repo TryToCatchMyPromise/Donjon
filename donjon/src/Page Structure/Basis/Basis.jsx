@@ -6,6 +6,7 @@ import ScrollTop from "./ScrollTop/ScrollTop";
 import ImageTransfer from "../Pages content/main_page/Image Transfer/ImageTransfer";
 import OurHistory from "../Pages content/main_page/Our History/OurHistory";
 import classes from "./Basis.module.css";
+import LeftHeaderContainer from "./Left Header/LeftHeaderContainer";
 
 const Basis = (props) => {
 
@@ -14,6 +15,7 @@ const Basis = (props) => {
         <section className={classes.video_and_menu}>
           <VideoContainer/>
           <UpHeaderContainer/>
+          <LeftHeaderContainer/>
           <div className={classes.overlay}></div>
           <ScrollTop/>
         </section>

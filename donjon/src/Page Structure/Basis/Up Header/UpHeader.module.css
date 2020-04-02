@@ -32,15 +32,16 @@
     align-items: center;
     height: 15vh;
     width: 100vw;
-border: 1px solid yellow;
+    border: 1px solid yellow;
     flex-grow: 1;
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .logo {
-        background-image: url("../../../../src/files/main/whiteLogo.png");
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
+    background-image: url("../../../../src/files/main/whiteLogo.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     /*width: 100%;*/
     flex: 322 322;
     height: 10vh;

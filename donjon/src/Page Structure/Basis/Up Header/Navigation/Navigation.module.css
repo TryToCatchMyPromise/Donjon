@@ -1,0 +1,26 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    opacity: 1;
+}
+
+
+.nav_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 5vh;
+    flex: 1 1;
+    height: 15vh;
+    /*justify-content: space-between;*/
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    white-space: nowrap;
+}

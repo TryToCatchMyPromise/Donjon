@@ -1,13 +1,67 @@
 /*-------------------------HEADER--------------------------------------------*/
 
+/*.header {*/
+/*    position: fixed;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    flex-direction: row;*/
+/*    flex-wrap: nowrap;*/
+/*    width: 100vw;*/
+/*    text-decoration: none;*/
+/*    transition: all 0.5s ease-in;*/
+/*    transform: translateY(0);*/
+/*    z-index: 10;*/
+/*    background: rgba(255, 255, 255, 0.2);*/
+/*}*/
+
+/*.logo {*/
+/*    background-image: url("../../../../src/files/main/logo.png");*/
+/*    width: 100px;*/
+/*    !*height: 100px;*!*/
+/*    background-position: center;*/
+/*    background-size: contain;*/
+/*    background-repeat: no-repeat;*/
+/*}*/
+
 .header {
     position: fixed;
-    width: 100vw;
-    text-decoration: none;
-    transition: all 0.5s ease-in;
-    transform: translateY(0);
     z-index: 10;
-    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 100vw;
+border: 1px solid yellow;
+    flex-grow: 1;
+}
+
+.logo {
+        background-image: url("../../../../src/files/main/whiteLogo.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    /*width: 100%;*/
+    flex: 322 322;
+    height: 10vh;
+    border: 1px solid green;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: white;
+    /*width: 100%;*/
+    flex: 243 243;
+    height: 15vh;
+    border: 1px solid blue;
+    font-size: 2.5vh;
+}
+
+.btn {
+    border: 1px solid white;
+    padding: 5px 15px;
 }
 
 /*-------------------------HEADER-ANIMATION--------------------------------------------*/

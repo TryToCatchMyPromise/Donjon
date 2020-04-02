@@ -5,6 +5,11 @@ nav {
     flex-direction: row;
     flex-wrap: nowrap;
     opacity: 1;
+    border: 1px solid red;
+    /*min-width: 800px;*/
+    /*max-width: 1000px;*/
+    /*width: 100%;*/
+    flex: 435 435 ;
 }
 
 
@@ -13,7 +18,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    font-size: 5vh;
+    font-size: 2.5vh;
     flex: 1 1;
     height: 15vh;
     /*justify-content: space-between;*/
@@ -21,6 +26,6 @@ nav {
 
 a {
     text-decoration: none;
-    color: blue;
+    color: white;
     white-space: nowrap;
 }

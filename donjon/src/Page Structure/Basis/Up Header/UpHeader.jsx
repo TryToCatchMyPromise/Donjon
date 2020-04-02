@@ -5,7 +5,11 @@ import Navigation from "./Navigation/Navigation";
 const UpHeader = () => {
   return (
       <div className={classes.header}>
+        <div className={classes.logo}></div>
         <Navigation/>
+        <div className={classes.btnContainer}>
+          <div className={classes.btn}>Оставить заявку</div>
+        </div>
       </div>
   );
 };

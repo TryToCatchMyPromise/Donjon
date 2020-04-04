@@ -33,6 +33,7 @@ const Footer = () => {
           </div>
           <div className={classes.map_info}></div>
         </section>
+        <div className={classes.test}></div>
       </section>
   );
 };

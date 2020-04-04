@@ -180,11 +180,11 @@ main {
 }
 
 #secondImage {
-    background-image: url("files/hotel.jpg");
+    background-image: url("files/main/hotel.jpg");
 }
 
 #thirdImage {
-    background-image: url("files/pool.jpg");
+    background-image: url("files/main/pool.jpg");
 }
 
 .image-transfer div:hover {

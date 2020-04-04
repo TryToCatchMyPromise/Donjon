@@ -85,3 +85,28 @@
     font-size: 10vh;
     flex: 1 1 30%;
 }
+
+.test {
+    height: 10vh;
+    width: 10vh;
+    background-color: red;
+}
+
+.test:hover {
+    animation-name: test;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes test {
+    from {
+        background-color: inherit;
+    }
+    50% {
+        background-color: green;
+    }
+    to {
+        background-color: blue;
+    }
+}

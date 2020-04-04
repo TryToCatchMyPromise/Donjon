@@ -1,69 +1,183 @@
 /*-------------------------IMAGE-TRANSFER--------------------------------------------*/
 
-.image_transfer {
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    /*height: 100vh;*/
-    /*flex-wrap: nowrap;*/
+.image_flex_container {
+    display: flex;
 }
 
-.image_transfer_flex {
+.image_items {
     display: flex;
-    z-index: 1;
-    transition-property: opacity;
-    transition-duration: 5s;
-}
-
-/*.image-transfer-flex > div {*/
-/*    transition-property: opacity;*/
-/*    transition-duration: 5s;*/
-/*}*/
-
-.image_transfer_items {
-    display: flex;
+    height: 100vh;
+    flex: 1 1;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 4vh;
-    text-shadow: lime;
-    height: 100vh;
-    /*width: 33vw;*/
-    flex: 1 1;
-    transition-property: flex, opacity, font-size;
-    transition-duration: 1.1s;
-    transition-timing-function: ease-out;
-    /*border: 1px solid blue;*/
+    /*transition-property: flex, opacity, font-size;*/
+
+
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    transition-property: flex;
+    transition-duration: 1.1s;
+    transition-timing-function: ease-out;
 }
 
-.image_transfer_item_name {
+.overlay {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 10;
+
+    transition-property: background;
+    transition-duration: 1.1s;
+    transition-timing-function: ease-out;
+}
+
+.data_container {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    /*background: #3f0d0d;*/
+    background: rgba(45, 2, 7, 0.7);
+    width: 24vw;
+    height: 30vh;
+    padding: 3vh 2vw;
+    transition-property: width, height;
+    transition-duration: 1.1s;
+    transition-timing-function: ease-out;
+}
+
+.name {
+    font-size: 60px;
+    color: white;
+    /*border: 1px solid green;*/
+}
+
+.monogram {
+    width: 18vw;
+    height: 2vh;
+    border-top: 1px solid white;
+}
+
+.text {
+    /*border: 1px solid red;*/
+    color: white;
+    text-align: center;
+    font-size: 0.00000000vh;
+    flex: 0.00000001;
+    /*width: 6vw;*/
+    /*height: 5vh;*/
+    opacity: 0;
+    transition-property: width, height, opacity, flex, font-size;
+    transition-duration: 1.1s;
+    transition-timing-function: ease-out;
+}
+
+
+.phone {
+    color: #ecdac0;
+    margin-top: 1vh;
+    text-align: center;
+    /*border: 1px solid yellow;*/
+    font-size: 0.00000000vh;
+    flex: 0.00000001;
+    /*width: 6vw;*/
+    /*height: 5vh;*/
+    opacity: 0;
+    transition-property: opacity, flex, font-size;
+    transition-duration: 1.1s;
+    transition-timing-function: ease-out;
+}
+
+.btn {
+    color: black;
+    background-color: white;
+    margin-top: 1vh;
+    transition-property: opacity, flex, font-size;
+    transition-duration: 1.1s;
+    transition-timing-function: ease-out;
 }
 
 .firstImage {
-    background-image: url("../../../../files/restaurant.jpg");
+    background-image: url("../../../../files/main/restaurant.jpg");
 }
 
 .secondImage {
-    background-image: url("../../../../files/hotel.jpg");
+    background-image: url("../../../../files/main/hotel.jpg");
 }
 
 .thirdImage {
-    background-image: url("../../../../files/pool.jpg");
+    background-image: url("../../../../files/main/pool.jpg");
 }
 
-.image_transfer div:hover {
-    flex: 1 1 60%;
+.image_flex_container:hover > div {
+    flex: 5;
 }
 
-.image_transfer_flex:hover > div {
-    opacity: 0.5;
+.image_flex_container:hover > div:hover {
+    flex: 16;
 }
-.image_transfer_flex:hover > div:hover {
+
+.image_flex_container:hover .data_container {
+    width: 12vw;
+    height: 10vh;
+}
+
+.image_flex_container:hover .image_items:hover .data_container {
+    width: 50vw;
+    height: 60vh;
+}
+
+.image_flex_container:hover .text {
+    font-size: 0.00000000vh;
+    flex: 0.00000001;
+    opacity: 0;
+}
+
+.image_flex_container:hover .image_items:hover .text {
+    font-size: 4vh;
+    flex: 1;
     opacity: 1;
+    width: 50vw;
+    height: 30vh;
+}
+
+.image_flex_container:hover .phone {
+    font-size: 0.00000000vh;
+    flex: 0.00000001;
+    opacity: 0;
+}
+
+.image_flex_container:hover .image_items:hover .phone {
+    font-size: 4vh;
+    flex: 0.13;
+    opacity: 1;
+    height: 2vh;
+}
+
+.image_flex_container:hover .btn {
+    font-size: 0.00000000vh;
+    flex: 0.00000001;
+    opacity: 0;
+}
+
+.image_flex_container:hover .image_items:hover .btn {
+    font-size: 4vh;
+    flex: 0.13;
+    opacity: 1;
+    height: 2vh;
+}
+
+.image_flex_container:hover .overlay {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.image_flex_container:hover .overlay:hover {
+    background: rgba(1, 1, 1, 0);
     font-size: 6vh;
 }

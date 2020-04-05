@@ -49,19 +49,26 @@
     padding: 3vh 2vw;
     transition-property: width, height;
     transition-duration: 1.1s;
-    transition-timing-function: ease-out;
+    transition-timing-function: ease-in;
 }
 
 .name {
     font-size: 60px;
     color: white;
     /*border: 1px solid green;*/
+    font-family: "Black KnightC";
 }
 
 .monogram {
     width: 18vw;
     height: 2vh;
-    border-top: 1px solid white;
+    background-image: url("../../../../files/main/white_line.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition-property: width;
+    transition-duration: 1.1s;
+    transition-timing-function: ease-out;
 }
 
 .text {
@@ -126,11 +133,25 @@
 .image_flex_container:hover .data_container {
     width: 12vw;
     height: 10vh;
+    transition-property: width, height;
+    transition-duration: 0.4s, 1.1s;
+    transition-timing-function: ease-out;
 }
 
 .image_flex_container:hover .image_items:hover .data_container {
     width: 50vw;
     height: 60vh;
+    transition-property: width, height;
+    transition-duration: 1.1s;
+    transition-timing-function: ease-out;
+}
+
+.image_flex_container:hover .monogram {
+    width: 4vw;
+}
+
+.image_flex_container:hover .image_items:hover .monogram {
+width: 40vw;
 }
 
 .image_flex_container:hover .text {

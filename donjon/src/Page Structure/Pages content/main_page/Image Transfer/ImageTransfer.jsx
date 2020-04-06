@@ -14,7 +14,11 @@ const ImageTransfer = () => {
             <div className={classes.monogram}></div>
             <div className={classes.text}>Очень длинный текст про гостиницу и то, как там круто жить</div>
             <div className={classes.phone}>+7 (4842) 56-57-56</div>
-            <div className={classes.btn}>Подробнее</div>
+            <div className={classes.btn_container}>
+              <div className={classes.btn}>
+                Подробнее
+              </div>
+            </div>
           </div>
         </div>
 
@@ -25,7 +29,11 @@ const ImageTransfer = () => {
             <div className={classes.monogram}></div>
             <div className={classes.text}>Очень длинный текст про ресторан и то, как там круто есть</div>
             <div className={classes.phone}>+7 (4842) 22-49-96</div>
-            <div className={classes.btn}>Подробнее</div>
+            <div className={classes.btn_container}>
+              <div className={classes.btn}>
+                Подробнее
+              </div>
+            </div>
           </div>
 
         </div>
@@ -36,7 +44,11 @@ const ImageTransfer = () => {
             <div className={classes.monogram}></div>
             <div className={classes.text}>Очень длинный текст про услуги и то, как там круто отдыхать</div>
             <div className={classes.phone}>+7 (4842) 56-57-56</div>
-            <div className={classes.btn}>Подробнее</div>
+            <div className={classes.btn_container}>
+              <div className={classes.btn}>
+                Подробнее
+              </div>
+            </div>
           </div>
 
         </div>

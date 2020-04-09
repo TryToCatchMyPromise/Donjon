@@ -3,38 +3,31 @@ import classes from "./Footer.module.css";
 
 const Footer = () => {
   return (
-      <section className={classes.contacts_block}>
-        <section className={classes.phones_and_emails}>
-          <div className={classes.section_name}>
-            <span>Контакты</span>
-          </div>
-          <div className={classes.phones_and_emails_container}>
-            <div className={classes.phones}>
-              <div className={classes.phones_item}>+7(4842)22-49-96</div>
-              <div className={classes.phones_item}>+7(4842)56-57-56</div>
-              <div className={classes.phones_item}>+7(4842)56-57-56</div>
-            </div>
-            <div className={classes.emails}>
-              <div className={classes.emails_item}>restaurant@donjon-kaluga.ru</div>
-              <div className={classes.emails_item}>hotel@donjon-kaluga.ru</div>
-              <div className={classes.emails_item}>office@donjon-kaluga.ru</div>
-              <div className={classes.emails_item}>service@donjon-kaluga.ru</div>
-              <div className={classes.emails_item}>marketing@donjon-kaluga.ru</div>
-            </div>
-          </div>
-        </section>
-        <section className={classes.map}>
-          <div className={classes.map_container}>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1157.7991334064989!2d36.
-        23992447095961!3d54.52294599842155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
-        1s0x4134ba2f856547e7%3A0x48f629b1801e7241!2z0JPQvtGB0YLQuNC90LjRhtCwICLQlNC-0L3QttC-0L0i!5e0!3m2!
-        1sru!2sru!4v1577049217130!5m2!1sru!2sru"
-                    allowFullScreen="allowfullscreen"></iframe>
-          </div>
-          <div className={classes.map_info}></div>
-        </section>
-        <div className={classes.test}></div>
-      </section>
+      <div className={classes.container}>
+        <div className={classes.castle}></div>
+        <div className={classes.grid_container}>
+          <div className={classes.item + ' ' + classes.logo}></div>
+          <div className={classes.item + ' ' + classes.name}>Гостиница</div>
+          <div className={classes.item + ' ' + classes.name}>Ресторан</div>
+          <div className={classes.item + ' ' + classes.name}>Услуги</div>
+          <div className={classes.item}>+7 (4842) 56-57-56</div>
+          <div className={classes.item}>+7 (4842) 22-49-96</div>
+          <div className={classes.item}>+7 (4842) 56-57-56</div>
+          <div className={classes.item}>Калуга, ул. Семеново городище 6</div>
+          <div className={classes.item}>hotel@donjon-kaluga.ru</div>
+          <div className={classes.item}>restaurant@donjon-kaluga.ru</div>
+          <div className={classes.item}>services@donjon-kaluga.ru</div>
+          <div className={classes.item + ' ' + classes.message_icon + ' ' + classes.mi1}></div>
+          <div className={classes.item + ' ' + classes.message_icon + ' ' + classes.mi2}></div>
+          <div className={classes.item + ' ' + classes.message_icon + ' ' + classes.mi3}></div>
+          <div className={classes.item + ' ' + classes.phone_icon + ' ' + classes.pi1}></div>
+          <div className={classes.item + ' ' + classes.phone_icon + ' ' + classes.pi2}></div>
+          <div className={classes.item + ' ' + classes.phone_icon + ' ' + classes.pi3}></div>
+          <div className={classes.item + ' ' + classes.location_icon}></div>
+          <div className={classes.item + ' ' + classes.social_icon + ' ' + classes.si1}></div>
+          <div className={classes.item + ' ' + classes.social_icon + ' ' + classes.si2}></div>
+        </div>
+      </div>
   );
 };
 

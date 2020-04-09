@@ -3,7 +3,7 @@
     flex-direction: column;
 
     height: 185vh;
-    background-image: url("../../../../../src/files/main/AboutUsBackground.jpg");
+    background-image: url("../../../../files/main/AboutUs/AboutUsBackground.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -32,7 +32,7 @@
 /*}*/
 
 .separating_line {
-    background-image: url("../../../../files/main/SeparatingLine.svg");
+    background-image: url("../../../../files/main/AboutUs/SeparatingLine.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

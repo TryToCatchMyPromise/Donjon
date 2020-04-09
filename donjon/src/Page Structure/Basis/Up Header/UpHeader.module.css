@@ -39,7 +39,7 @@
 }
 
 .logo {
-    background-image: url("../../../../src/files/main/whiteLogo.png");
+    background-image: url("../../../files/whiteLogo.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

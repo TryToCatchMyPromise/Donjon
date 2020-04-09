@@ -1,112 +1,148 @@
-/*----------------------------CONTACTS-----------------------------------------*/
-
-.contacts_block {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 1px solid orange;
+.container {
+    position: relative;
+    height: 25vh;
+    background-color: #ECDAC0;
 }
 
-.phones_and_emails {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    border: 1px solid green;
-}
-
-.map {
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
-}
-
-.map_container {
-    flex: 1 1;
-    border: 1px solid blue;
-}
-
-.map_container iframe {
-    width: 100%;
+.castle {
+position: absolute;
+    right: 0;
+    background-image: url("../../../src/files/Basis/Footer/footerCastle.svg");
     height: 100%;
+    width: 30vh;
 }
 
-.map_info {
-    flex: 1 1;
-    border: 1px solid tomato;
+.grid_container {
+    font-family: "Book Antiqua";
+    display: grid;
+    grid-template-columns: 20px [first-vert-icon] 0.75fr [social] 0.75fr [first-vert]
+                            20px [second-vert-icon] 1fr [second-vert]
+                            20px [third-vert-icon] 1fr [third-vert]
+                            20px [fourth-vert-icon] 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100%;
+padding: 0 8vw;
+    grid-column-gap: 1vh;
 }
 
-.phones_and_emails_container {
+.item {
     display: flex;
-    flex-direction: row;
-    flex: 1 1 70%;
-    font-size: 6vh;
-}
-
-.phones {
-    display: flex;
-    flex-direction: column;
+    justify-content: left;
     align-items: center;
-    justify-content: center;
-    flex: 1 1;
 }
 
-.phones_item {
-    flex: 1 1;
+.logo {
+    background-image: url("../../../src/files/Basis/Footer/footerLogo.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-column: 1 / first-vert;
+
+}
+
+.name {
+    font-family: "Black KnightC";
+    font-size: 5vh;
+}
+
+.item:nth-child(2) {
+    grid-column: first-vert / second-vert;
+}
+
+.item:nth-child(3) {
+    grid-column: second-vert / third-vert;
+}
+
+.item:nth-child(4) {
+    grid-column: third-vert / 1 span;
+}
+
+.item:nth-child(5) {
+    grid-column: second-vert-icon / 1 span;
+}
+
+.item:nth-child(6) {
+    grid-column: third-vert-icon / 1 span;
+}
+
+.item:nth-child(7) {
+    grid-column: fourth-vert-icon / 1 span;
+}
+
+.item:nth-child(8) {
+    grid-column: first-vert-icon / 2 span;
+}
+
+.item:nth-child(9) {
+    grid-column: second-vert-icon / 1 span;
+}
+
+.item:nth-child(10) {
+    grid-column: third-vert-icon / 1 span;
+}
+
+.item:nth-child(11) {
+    grid-column: fourth-vert-icon / 1 span;
+}
+
+.message_icon {
+    font-family: "Font Awesome 5 Pro Regular";
+
+}
+
+.mi1 {
+    grid-column: first-vert / second-vert-icon;
+    grid-row: 3/4;
+}
+
+.mi2 {
+    grid-column: second-vert / third-vert-icon;
+    grid-row: 3/4;
+}
+
+.mi3 {
+    grid-column: third-vert / fourth-vert-icon;
+    grid-row: 3/4;
+}
+
+.phone_icon {
+    font-family: "Font Awesome 5 Pro Regular";
+
+}
+
+.pi1 {
+    grid-column: first-vert / second-vert-icon;
+    grid-row: 2/3;
+}
+
+.pi2 {
+    grid-column: second-vert / third-vert-icon;
+    grid-row: 2/3;
+}
+
+.pi3 {
+    grid-column: third-vert / fourth-vert-icon;
+    grid-row: 2/3;
+}
+
+.location_icon {
+    font-family: "Font Awesome 5 Pro Regular";
+    grid-column: 1 / first-vert-icon;
+    grid-row: 3/4;
+}
+
+.social_icon {
+    font-family: "Font Awesome 5 Brands Regular";
+}
+
+.si1 {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    grid-column: first-vert-icon / social;
+    grid-row: 2/3;
 }
 
-.emails_item {
-    flex: 1 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.emails {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex: 1 1;
-}
-
-.phones_and_emails span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.section_name {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 10vh;
-    flex: 1 1 30%;
-}
-
-.test {
-    height: 10vh;
-    width: 10vh;
-    background-color: red;
-}
-
-.test:hover {
-    animation-name: test;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-
-}
-
-@keyframes test {
-    from {
-        background-color: inherit;
-    }
-    50% {
-        background-color: green;
-    }
-    to {
-        background-color: blue;
-    }
+.si2 {
+    grid-column: social / first-vert;
+    grid-row: 2/3;
 }

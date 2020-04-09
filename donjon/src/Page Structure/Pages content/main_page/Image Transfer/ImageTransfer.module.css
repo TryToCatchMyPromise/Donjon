@@ -63,7 +63,7 @@
 .monogram {
     width: 18vw;
     height: 2vh;
-    background-image: url("../../../../files/main/white_line.png");
+    background-image: url("../../../../files/main/ImageTransfer/white_line.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -132,15 +132,15 @@
 }
 
 .firstImage {
-    background-image: url("../../../../files/main/restaurant.jpg");
+    background-image: url("../../../../files/main/ImageTransfer/restaurant.jpg");
 }
 
 .secondImage {
-    background-image: url("../../../../files/main/hotel.jpg");
+    background-image: url("../../../../files/main/ImageTransfer/hotel.jpg");
 }
 
 .thirdImage {
-    background-image: url("../../../../files/main/pool.jpg");
+    background-image: url("../../../../files/main/ImageTransfer/pool.jpg");
 }
 
 .image_flex_container:hover > div {

@@ -20,7 +20,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-background-image: url("../../../../../files/main/Frame.svg");
+background-image: url("../../../../../files/main/AboutUs/Frame.svg");
     width: 10vw;
     height: 28vh;
     border: 1px solid red;
@@ -53,25 +53,25 @@ background-image: url("../../../../../files/main/Frame.svg");
 }
 
 .icon_knight {
-    background-image: url("../../../../../files/main/iconKnight.svg");
+    background-image: url("../../../../../files/main/AboutUs/iconKnight.svg");
 }
 
 .icon_map {
-    background-image: url("../../../../../files/main/iconMap.svg");
+    background-image: url("../../../../../files/main/AboutUs/iconMap.svg");
 
 }
 
 .icon_dish {
-    background-image: url("../../../../../files/main/iconDish.svg");
+    background-image: url("../../../../../files/main/AboutUs/iconDish.svg");
 
 }
 
 .icon_view {
-    background-image: url("../../../../../files/main/iconView.svg");
+    background-image: url("../../../../../files/main/AboutUs/iconView.svg");
 
 }
 
 .icon_complex {
-    background-image: url("../../../../../files/main/iconComplex.svg");
+    background-image: url("../../../../../files/main/AboutUs/iconComplex.svg");
 
 }

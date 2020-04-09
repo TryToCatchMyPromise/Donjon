@@ -1,0 +1,41 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+
+    height: 185vh;
+    background-image: url("../../../../../src/files/main/AboutUsBackground.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay {
+    height: 100%;
+    background: rgba(45, 2, 7, 0.95);
+}
+
+.data_container {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    border: 1px solid blue;
+    padding: 4vh 8vw;
+}
+
+/*.separating_line {*/
+/*    height: 10vh;*/
+/*    background-image: url("../../../../../src/files/main/white_line.png");*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: center;*/
+/*    background-size: cover;*/
+/*}*/
+
+.separating_line {
+    background-image: url("../../../../files/main/SeparatingLine.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 10vh;
+    border: 1px solid red;
+}

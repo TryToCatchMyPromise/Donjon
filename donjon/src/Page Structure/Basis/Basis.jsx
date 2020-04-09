@@ -4,7 +4,7 @@ import UpHeader from "./Up Header/UpHeader";
 import UpHeaderContainer from "./Up Header/UpHeaderContainer";
 import ScrollTop from "./ScrollTop/ScrollTop";
 import ImageTransfer from "../Pages content/main_page/Image Transfer/ImageTransfer";
-import OurHistory from "../Pages content/main_page/Our History/OurHistory";
+import AboutUs from "../Pages content/main_page/AboutUs/AboutUs";
 import classes from "./Basis.module.css";
 import LeftHeaderContainer from "./Left Header/LeftHeaderContainer";
 

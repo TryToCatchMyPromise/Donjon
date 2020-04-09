@@ -1,0 +1,77 @@
+.flex_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid aqua;
+    /*width: 95%;*/
+    padding: 0 2vh;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid purple;
+}
+
+.icon_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+background-image: url("../../../../../files/main/Frame.svg");
+    width: 10vw;
+    height: 28vh;
+    border: 1px solid red;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 14vh;
+    width: 8vw;
+    border: 1px solid blue;
+}
+
+.icon_name {
+    font-family: "AA Haymaker";
+    color: white;
+    text-align: center;
+    font-size: 2.5vh;
+    width: 17vw;
+    text-transform: uppercase;
+    background: linear-gradient(#aea67e 6%, #cfc7a9 10%, #7c7354 2%, #87815e 5%, #87815e 10%, #5a573f 16%, #c2b691 7%, #fdfdfd 4%, #fefefe 9%, #bbb185 3%, #e2decb 4%, #9e956b 2%, #857e5d 1%, #898161 2%, #a39971 5%, #aa9f74 10%, #e0dac9 3% );
+    background-clip: text;
+    color: transparent;
+    border: 1px solid chartreuse;
+
+}
+
+.icon_knight {
+    background-image: url("../../../../../files/main/iconKnight.svg");
+}
+
+.icon_map {
+    background-image: url("../../../../../files/main/iconMap.svg");
+
+}
+
+.icon_dish {
+    background-image: url("../../../../../files/main/iconDish.svg");
+
+}
+
+.icon_view {
+    background-image: url("../../../../../files/main/iconView.svg");
+
+}
+
+.icon_complex {
+    background-image: url("../../../../../files/main/iconComplex.svg");
+
+}

@@ -1,0 +1,97 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.container {
+    /*position: relative;*/
+}
+
+.h1 {
+    font-size: 9vh;
+    font-family: "Black KnightC";
+    /*border: 1px solid yellow;*/
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: "Book Antiqua";
+    /*grid-template-rows: 1fr 1fr 1fr;*/
+}
+
+.grid_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px solid lime;*/
+    height: 30vh;
+}
+
+.text1 {
+    justify-content: start;
+}
+
+.castle {
+    background-image: url("../../../../../files/main/AboutUsCastle.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+
+.arrow1 {
+    background-image: url("../../../../../files/main/AboutUsArrow.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+
+.arrow2 {
+    background-image: url("../../../../../files/main/AboutUsArrow.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    transform: rotateY(180deg);
+}
+
+.text2 {
+justify-content: flex-end;
+}
+
+.man_and_castle {
+    background-image: url("../../../../../files/main/AboutUsMenAndCastle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.text3 {
+justify-content: flex-end;
+}
+
+.knight_on_the_horse {
+    background-image: url("../../../../../files/main/KnightOnTheHorse.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.arrow3 {
+    background-image: url("../../../../../files/main/AboutUsArrow.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+
+.text4 {
+justify-content: flex-end;
+}
+
+.middle_age_party {
+    background-image: url("../../../../../files/main/middleAgeParty.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+

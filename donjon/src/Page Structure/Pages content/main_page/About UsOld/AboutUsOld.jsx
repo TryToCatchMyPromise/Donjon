@@ -1,7 +1,7 @@
 import React from "react";
-import classes from "./AboutUs.module.css";
+import classes from "./AboutUsOld.module.css";
 
-const AboutUs = () => {
+const AboutUsOld = () => {
   return (
       <section className={classes.about_us_block}>
         <div className={classes.about_us_column + ' ' + classes.about_us_left}>
@@ -26,4 +26,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default AboutUsOld;

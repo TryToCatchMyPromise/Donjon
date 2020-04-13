@@ -25,17 +25,21 @@
 /*}*/
 
 .header {
-    font-family: "AA Haymaker";
+    font-family: "AA Haymaker", regular;
+    letter-spacing: 1px;
+    /*font-weight: lighter;*/
     position: fixed;
     z-index: 20;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 15vh;
-    width: 100vw;
+    height: 108px;
+    width: 100%;
     /*border: 1px solid yellow;*/
-    flex-grow: 1;
+    /*flex-grow: 1;*/
+
     background: rgba(255, 255, 255, 0.2);
+    font-size: 16px;
 }
 
 .logo {
@@ -44,8 +48,9 @@
     background-size: contain;
     background-repeat: no-repeat;
     /*width: 100%;*/
-    flex: 322 322;
-    height: 10vh;
+    /*flex: 322 322;*/
+    flex: 652;
+    height: 75px;
     /*border: 1px solid green;*/
 }
 
@@ -55,15 +60,18 @@
     align-items: center;
     color: white;
     /*width: 100%;*/
-    flex: 243 243;
-    height: 15vh;
+    flex: 465;
+    /*flex: 1;*/
+    /*height: 15vh;*/
     /*border: 1px solid blue;*/
-    font-size: 2.5vh;
+    font-size: 17px;
+    /*padding-left: 50px;*/
+    white-space: nowrap;
 }
 
 .btn {
     border: 1px solid white;
-    padding: 5px 15px;
+    padding: 12px 24px;
 }
 
 /*-------------------------HEADER-ANIMATION--------------------------------------------*/

@@ -13,29 +13,43 @@ const History = () => {
               когда каждый феодал заботился о<br/> комфорте и надёжности
               для себя<br/> и своей семьи.
             </div>
-            <div className={classes.grid_item + ' ' + classes.castle}></div>
-            <div className={classes.grid_item + ' ' + classes.arrow1}></div>
-            <div className={classes.grid_item + ' ' + classes.arrow2}></div>
+            <div className={classes.grid_item}>
+              <div className={classes.castle}></div>
+            </div>
+            <div className={classes.grid_item}>
+              <div className={classes.arrow1}></div>
+            </div>
+            <div className={classes.grid_item}>
+              <div className={classes.arrow2}></div>
+            </div>
             <div className={classes.grid_item + ' ' + classes.text2}>
               Ну а самое защищённое место в<br/> замке – башня, называлась<br/>
-              «донжон», и именно там и жил<br/> феодал со своими близкими,
+              «Донжон», и именно там и жил<br/> феодал со своими близкими,
               так<br/> как понимал, что укромнее места<br/> во всём замке не сыщешь.
             </div>
-            <div className={classes.grid_item + ' ' + classes.man_and_castle}></div>
+            <div className={classes.grid_item}>
+              <div className={classes.man_and_castle}></div>
+            </div>
             <div className={classes.grid_item + ' ' + classes.text3}>
               Именно поэтому, вдохновившись<br/> духом средневековья, мы решили<br/>
               открыть замечательное место,<br/> которое будет нести ценности и<br/>
               идеалы того времени,<br/> совмещенные с инновациями и<br/> комфортом
               нашего времени.
             </div>
-            <div className={classes.grid_item + ' ' + classes.knight_on_the_horse}></div>
-            <div className={classes.grid_item + ' ' + classes.arrow3}></div>
-            <div className={classes.grid_item}>10</div>
+            <div className={classes.grid_item}>
+              <div className={classes.knight_on_the_horse}></div>
+            </div>
+            <div className={classes.grid_item}>
+              <div className={classes.arrow3}></div>
+            </div>
+            <div className={classes.grid_item}> </div>
             <div className={classes.grid_item + ' ' + classes.text4}>
               Под одной крышей мы собрали<br/> всё, чтобы ваш отдых
               состоялся<br/> как душой, так и телом.
             </div>
-            <div className={classes.grid_item + ' ' + classes.middle_age_party}></div>
+            <div className={classes.grid_item}>
+              <div className={classes.middle_age_party}></div>
+            </div>
 
           </div>
         </div>

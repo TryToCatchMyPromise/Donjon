@@ -12,7 +12,7 @@ const ImageTransfer = () => {
           <div className={classes.data_container}>
             <div className={classes.name}>Гостиница</div>
             <div className={classes.monogram}></div>
-            <div className={classes.text}>Очень длинный текст про гостиницу и то, как там круто жить</div>
+            <div className={classes.text}>Очень длинный текст про гостиницу и то,<br/> как там круто жить</div>
             <div className={classes.phone}>+7 (4842) 56-57-56</div>
             <div className={classes.btn_container}>
               <div className={classes.btn}>
@@ -27,7 +27,7 @@ const ImageTransfer = () => {
           <div className={classes.data_container}>
             <div className={classes.name}>Ресторан</div>
             <div className={classes.monogram}></div>
-            <div className={classes.text}>Очень длинный текст про ресторан и то, как там круто есть</div>
+            <div className={classes.text}>Очень длинный текст про ресторан и то,<br/> как там круто есть, пить, танцевать.<br/> Всем советуем!</div>
             <div className={classes.phone}>+7 (4842) 22-49-96</div>
             <div className={classes.btn_container}>
               <div className={classes.btn}>
@@ -42,7 +42,7 @@ const ImageTransfer = () => {
           <div className={classes.data_container}>
             <div className={classes.name}>Услуги</div>
             <div className={classes.monogram}></div>
-            <div className={classes.text}>Очень длинный текст про услуги и то, как там круто отдыхать</div>
+            <div className={classes.text}>Очень длинный текст про услуги и то,<br/> как там круто отдыхать</div>
             <div className={classes.phone}>+7 (4842) 56-57-56</div>
             <div className={classes.btn_container}>
               <div className={classes.btn}>

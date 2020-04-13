@@ -9,15 +9,21 @@
 }
 
 .h1 {
-    font-size: 9vh;
+    font-size: 58px;
+    letter-spacing: 4px;
     font-family: "Black KnightC";
     /*border: 1px solid yellow;*/
 }
 
 .grid_container {
+    margin: 7% 0 0 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    grid-template-columns: repeat(3, minmax(310px, 1fr));
+    grid-template-rows: 300px 300px 320px 190px;
     font-family: "Book Antiqua";
+    letter-spacing: 1.5px;
+    line-height: 1.5;
     /*grid-template-rows: 1fr 1fr 1fr;*/
 }
 
@@ -26,11 +32,12 @@
     align-items: center;
     justify-content: center;
     /*border: 1px solid lime;*/
-    height: 30vh;
+    /*height: 30vh;*/
 }
 
 .text1 {
     justify-content: start;
+    align-items: flex-start;
 }
 
 .castle {
@@ -38,60 +45,110 @@
     background-repeat: no-repeat;
     background-position: left;
     background-size: contain;
+    position: relative;
+    top: -25%;
+    left: -8%;
+    height: 90%;
+    width: 100%;
 }
 
+/*.arrow1_container {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+
 .arrow1 {
+    position: relative;
+    left: -10%;
     background-image: url("../../../../../files/main/AboutUs/AboutUsArrow.svg");
     background-repeat: no-repeat;
     background-position: left;
-    background-size: contain;
+    background-size: 68%;
+    height: 100%;
+width: 100%;
 }
 
 .arrow2 {
     background-image: url("../../../../../files/main/AboutUs/AboutUsArrow.svg");
     background-repeat: no-repeat;
     background-position: left;
-    background-size: contain;
-    transform: rotateY(180deg);
+    transform: rotateY(180deg) rotate(9deg);
+    position: relative;
+    top: 2%;
+    left: 14%;
+    background-size: 68%;
+    height: 100%;
+    width: 100%;
 }
 
 .text2 {
-justify-content: flex-end;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    top: 8%;
+    right: -10%;
 }
 
 .man_and_castle {
     background-image: url("../../../../../files/main/AboutUs/AboutUsMenAndCastle.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    position: relative;
+    top: -20%;
+    left: 18%;
+    background-size: 70%;
+    height: 100%;
+    width: 100%;
 }
 
 .text3 {
-justify-content: flex-end;
+    justify-content: center;
+    position: relative;
+    top: -13%;
+    left: -5%;
 }
 
 .knight_on_the_horse {
     background-image: url("../../../../../files/main/AboutUs/KnightOnTheHorse.svg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    background-position: left;
+    position: relative;
+    top: -18%;
+    left: -5%;
+    background-size: 86%;
+    height: 100%;
+    width: 100%;
 }
 
 .arrow3 {
     background-image: url("../../../../../files/main/AboutUs/AboutUsArrow.svg");
     background-repeat: no-repeat;
     background-position: left;
-    background-size: contain;
+    background-size: 56%;
+    transform: rotate(13deg);
+    position: relative;
+    top: 21%;
+    left: -13%;
+    height: 100%;
+    width: 100%;
 }
 
 .text4 {
-justify-content: flex-end;
+    justify-content: flex-end;
+    position: relative;
+    top: -3%;
+    left: 12%;
 }
 
 .middle_age_party {
     background-image: url("../../../../../files/main/AboutUs/middleAgeParty.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    position: relative;
+    top: -3%;
+    left: -2%;
+    background-size: 39%;
+    height: 100%;
+    width: 100%;
 }
 

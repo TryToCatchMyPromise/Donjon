@@ -17,26 +17,6 @@
     width: 100%;
 }
 
-@media  (max-width: 1100px) {
-    .grid_item:nth-child(1) {
-        /*justify-content: center;*/
-        /*margin: 0 40%  0 0;*/
-    }
-
-    .grid_item:nth-child(1) .flex_item:nth-child(1) {
-justify-content: center;
-        margin: 0 40%  0 0;
-    }
-
-    .grid_item:nth-child(1) .flex_item:nth-child(2) {
-        width: 0;
-    }
-
-    .grid_item:nth-child(1) .flex_item:nth-child(3) {
-        width: 0;
-    }
-}
-
 .grid_container {
     margin: 7% 0 0 0;
     display: grid;
@@ -81,11 +61,6 @@ justify-content: center;
 
 
 }
-
-/*.arrow1_container {*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*}*/
 
 .arrow1 {
     position: relative;
@@ -182,13 +157,78 @@ justify-content: center;
     width: 100%;
 }
 
-@media (max-width: 1150px) {
-    .grid_container {
-        /*grid-template-columns: minmax(max-content, max-content);*/
-        /*grid-template-rows: minmax(max-content, max-content);*/
+@media (max-width: 1200px) {
+    .text1 {
+
     }
 
     .castle {
-        /*display: none;*/
+left: 8%;
+    }
+
+    .arrow1 {
+transform: rotate(20deg);
+        top: 15%;
+        left: 10%;
+    }
+
+    .arrow2 {
+        transform: rotateY(180deg) rotate(30deg);
+        top: 30%;
+        left: 5%;
+    }
+
+    .text2 {
+
+    }
+
+    .man_and_castle {
+
+    }
+
+    .text3 {
+
+    }
+
+    .knight_on_the_horse {
+left: 20%;
+    }
+
+    .arrow3 {
+transform: rotate(30deg);
+        left: 0%;
+        top: 40%;
+    }
+
+    .text4 {
+
+    }
+
+    .middle_age_party {
+
     }
 }
+
+/*@media  (max-width: 1100px) {*/
+/*    .grid_item:nth-child(1) {*/
+/*        !*justify-content: center;*!*/
+/*        !*margin: 0 40%  0 0;*!*/
+/*    }*/
+
+/*    .grid_item:nth-child(1) .flex_item:nth-child(1) {*/
+/*        justify-content: center;*/
+/*        margin: 0 40%  0 0;*/
+/*    }*/
+
+/*    .grid_item:nth-child(1) .flex_item:nth-child(2) {*/
+/*        width: 0;*/
+/*    }*/
+
+/*    .grid_item:nth-child(1) .flex_item:nth-child(3) {*/
+/*        width: 0;*/
+/*    }*/
+
+/*    .castle {*/
+/*        display: block;*/
+/*    }*/
+/*}*/

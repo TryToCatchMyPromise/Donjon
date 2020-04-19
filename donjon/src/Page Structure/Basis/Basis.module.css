@@ -6,4 +6,5 @@
 
 .overlay {
     height: 100vh;
+    background-color: rgba(0.1, 0.1, 0.1, 0.1);
 }

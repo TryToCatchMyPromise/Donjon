@@ -91,7 +91,7 @@
     align-items: flex-start;
     position: relative;
     top: 6%;
-    right: -1%;
+    left: 4%;
 }
 
 .man_and_castle {
@@ -100,7 +100,7 @@
     background-position: center;
     position: relative;
     top: -22%;
-    left: 6%;
+    left: 18%;
     background-size: 70%;
     height: 100%;
     width: 100%;
@@ -110,7 +110,7 @@
     justify-content: center;
     position: relative;
     top: 9%;
-    left: 4%;
+    left: -2%;
 }
 
 .knight_on_the_horse {
@@ -119,7 +119,7 @@
     background-position: left;
     position: relative;
     top: -21%;
-    left: -4%;
+    left: -6%;
     background-size: 86%;
     height: 100%;
     width: 100%;
@@ -142,7 +142,7 @@
     justify-content: flex-end;
     position: relative;
     top: 25%;
-    left: 8%;
+    left: 4%;
 }
 
 .middle_age_party {

@@ -2,7 +2,7 @@
     display: grid;
     /*grid-template-columns: repeat(auto-fill, minmax(calc(1/5*100%), max-content));*/
     /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
-    grid-template-columns: repeat(5, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     /*grid-template-rows: 2fr;*/
     /*flex-direction: row;*/
     /*align-items: center;*/

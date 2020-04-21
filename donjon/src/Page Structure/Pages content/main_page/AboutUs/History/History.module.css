@@ -158,10 +158,6 @@
 }
 
 @media (max-width: 1200px) {
-    .text1 {
-
-    }
-
     .castle {
 left: 8%;
     }
@@ -178,18 +174,6 @@ transform: rotate(20deg);
         left: 5%;
     }
 
-    .text2 {
-
-    }
-
-    .man_and_castle {
-
-    }
-
-    .text3 {
-
-    }
-
     .knight_on_the_horse {
 left: 20%;
     }
@@ -200,35 +184,72 @@ transform: rotate(30deg);
         top: 40%;
     }
 
-    .text4 {
-
-    }
-
-    .middle_age_party {
-
-    }
 }
 
-/*@media  (max-width: 1100px) {*/
-/*    .grid_item:nth-child(1) {*/
-/*        !*justify-content: center;*!*/
-/*        !*margin: 0 40%  0 0;*!*/
-/*    }*/
+@media  (max-width: 890px) {
+    .grid_container {
+        grid-template-rows: 300px 240px 240px 190px;
+    }
 
-/*    .grid_item:nth-child(1) .flex_item:nth-child(1) {*/
-/*        justify-content: center;*/
-/*        margin: 0 40%  0 0;*/
-/*    }*/
+    .grid_item:nth-child(1) .flex_item:nth-child(3) {
+        display: none;
+    }
 
-/*    .grid_item:nth-child(1) .flex_item:nth-child(2) {*/
-/*        width: 0;*/
-/*    }*/
+    .grid_item:nth-child(2) .flex_item:nth-child(1) {
+        display: none;
+    }
 
-/*    .grid_item:nth-child(1) .flex_item:nth-child(3) {*/
-/*        width: 0;*/
-/*    }*/
+    .grid_item:nth-child(3) .flex_item:nth-child(3) {
+        display: none;
+    }
 
-/*    .castle {*/
-/*        display: block;*/
-/*    }*/
-/*}*/
+    .grid_item:nth-child(4) .flex_item:nth-child(1) {
+        display: none;
+    }
+
+    .grid_item:nth-child(1) {
+        flex-direction: row-reverse;
+    }
+
+    .grid_item:nth-child(3) {
+        flex-direction: row-reverse;
+    }
+
+    .grid_item:nth-child(1) .flex_item {
+        justify-content: center;
+        align-items: center;
+        /*left: 0;*/
+        /*top: 0;*/
+    }
+
+    .castle {
+        background-position: center;
+        top: 0;
+        left: 0;
+    }
+
+    .text1 {
+        position: relative;
+        left: 3%;
+    }
+
+    .man_and_castle {
+        left: 5%;
+        top: 0;
+        transform: scale(1.2);
+    }
+
+    .knight_on_the_horse {
+        left: 5%;
+        /*background-size: 70%;*/
+    }
+
+
+}
+
+
+@media (max-width: 600px) {
+.wrapper {
+    display: none;
+}
+}

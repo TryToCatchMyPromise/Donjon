@@ -34,7 +34,7 @@ const ImageTransfer = () => {
           <div className={classes.data_container}>
             <div className={classes.name}>Услуги</div>
             <div className={classes.monogram}></div>
-            <div className={classes.text}>Очень длинный текст про услуги и то,<br/> как там круто отдыхать</div>
+            <div className={classes.text}>Очень длинный текст про услуги и то, как<br/> там круто отдыхать</div>
             <div className={classes.phone}>+7 (4842) 56-57-56</div>
             <div className={classes.new_btn}>Подробнее</div>
           </div>

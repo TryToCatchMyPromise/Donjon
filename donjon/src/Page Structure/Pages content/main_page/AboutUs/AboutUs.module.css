@@ -50,3 +50,13 @@
     height: 100%;
     width: 100%;
 }
+
+@media (max-width: 600px) {
+    /*.data_container:first-child {*/
+    /*    display: none;*/
+    /*}*/
+
+    .separating_line_container {
+        display: none;
+    }
+}

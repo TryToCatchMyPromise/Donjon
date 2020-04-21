@@ -8,7 +8,9 @@ const AboutUs = () => {
       <div className={classes.wrapper}>
         <div className={classes.overlay}>
           <div className={classes.data_container}>
-            <History/>
+            <div className={classes.history_wrapper}>
+              <History/>
+            </div>
             <div className={classes.separating_line_container}>
               <div className={classes.separating_line}></div>
             </div>

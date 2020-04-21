@@ -227,10 +227,34 @@ margin-left: 30px;
     grid-row: 3 / 4;
 }
 
-@media (max-width: 1292px) {
+@media (max-width: 1320px) {
+    .subgrid:nth-child(4) {
+        grid-column: 2 / 1 span;
+        grid-row: 2 / 3;
+    }
 
+    .subgrid:nth-child(2) {
+margin: 0;
+    }
 
+}
 
+@media (max-width: 963px) {
+    .subgrid:nth-child(4) {
+        margin: 0;
+        grid-column: initial;
+        grid-row: initial;
+    }
+
+    .subgrid {
+        justify-self: center;
+    }
+}
+
+@media (max-width: 633px) {
+    .subgrid:nth-child(2) {
+
+    }
 }
 
 

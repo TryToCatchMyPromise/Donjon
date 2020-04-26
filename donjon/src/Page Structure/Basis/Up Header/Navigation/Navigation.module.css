@@ -1,6 +1,6 @@
 nav {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
     /*flex-wrap: nowrap;*/
@@ -12,6 +12,8 @@ nav {
     /*flex: 435 435 ;*/
     /*flex: 803;*/
     flex: 563;
+    min-width: 600px;
+    border: 1px solid purple;
 }
 
 
@@ -24,11 +26,19 @@ nav {
     /*height: 15vh;*/
     /*justify-content: space-between;*/
     /*border: 1px solid darkmagenta;*/
-    margin: 0 30px 0 0;
+    /*margin: 0 30px 0 0;*/
 }
 
 a {
     text-decoration: none;
     color: white;
     /*white-space: nowrap;*/
+}
+
+@media (max-width: 1100px) {
+    .nav {
+        display: contents;
+    }
+
+
 }

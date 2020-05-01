@@ -1,13 +1,14 @@
 import React from "react";
 import classes from "./VideoContainer.module.css";
+import im from "../../../files/main/beforeVideo.jpg";
+import vid from "../../../files/my_video.mp4";
 
 const VideoContainer = () => {
   return (
       <div className={classes.video_container}>
-        {/*<video className={classes.main_video} src="GOPR1121.MP4" type="video/mp4">*/}
-        {/*</video>*/}
+        <video className={classes.main_video} src={vid} type="video/flv" autoPlay={true} loop={true} muted={true} poster={im}></video>
+        {/*<img src={im}  alt = 'logo'></img>*/}
         <div className={classes.overlay}></div>
-        <div className={classes.main_video}></div>
       </div>
   );
 };

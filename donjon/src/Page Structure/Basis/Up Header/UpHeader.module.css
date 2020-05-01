@@ -1,29 +1,5 @@
 /*-------------------------HEADER--------------------------------------------*/
 
-/*.header {*/
-/*    position: fixed;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    flex-direction: row;*/
-/*    flex-wrap: nowrap;*/
-/*    width: 100vw;*/
-/*    text-decoration: none;*/
-/*    transition: all 0.5s ease-in;*/
-/*    transform: translateY(0);*/
-/*    z-index: 10;*/
-/*    background: rgba(255, 255, 255, 0.2);*/
-/*}*/
-
-/*.logo_container {*/
-/*    background-image: url("../../../../src/files/main/logo_container.png");*/
-/*    width: 100px;*/
-/*    !*height: 100px;*!*/
-/*    background-position: center;*/
-/*    background-size: contain;*/
-/*    background-repeat: no-repeat;*/
-/*}*/
-
 .header {
     font-family: "AA Haymaker", regular;
     letter-spacing: 1px;
@@ -50,7 +26,7 @@ display: flex;
     /*flex: 322 322;*/
     flex: 300 200px;
     height: 60%;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
 }
 
 .logo {
@@ -60,7 +36,7 @@ display: flex;
     background-repeat: no-repeat;
     width: 200px;
     height: 100%;
-    border: 1px solid aqua;
+    /*border: 1px solid aqua;*/
 
 }
 
@@ -74,7 +50,7 @@ display: flex;
     min-width: 280px;
     /*flex: 1;*/
     /*height: 15vh;*/
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     font-size: 17px;
     /*padding-left: 50px;*/
     white-space: nowrap;

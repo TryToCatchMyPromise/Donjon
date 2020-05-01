@@ -29,7 +29,7 @@ const UpHeader = () => {
 
 
   return (
-      <div className={classes.header} onScroll={}>
+      <div className={classes.header}>
         <div className={classes.logo_container}>
           <div className={classes.logo}></div>
         </div>

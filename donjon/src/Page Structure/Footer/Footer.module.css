@@ -255,6 +255,9 @@ margin: 0;
     .subgrid:nth-child(2) {
 
     }
+    .logo {
+        transform: scale(0.9);
+    }
 }
 
 

@@ -152,9 +152,9 @@ display: none;
 
 
 /*-------------------------MOBILE-HEADER-ANIMATION--------------------------------------------*/
-.header_fixed_unactive {
+.header_unactive {
     /*left: -270px;*/
-    transform: translateX(-270px);
+    transform: translateX(-100%);
 }
 
 
@@ -172,20 +172,16 @@ display: none;
     transform: translateX(0);
 }
 
-.header_active_fixed {
-    transform: translateX(0px);
-}
-
 /*-------------------------PC-HEADER-ANIMATION--------------------------------------------*/
 
 .header_on_scroll_down {
-    transition: all 0.5s ease-in;
+    transition: all 0.45s ease-in;
     /*animation-fill-mode: forwards;*/
     transform: translateY(-100%);
 }
 
 .header_on_scroll_up {
-    transition: all 0.5s ease-in;
+    transition: all 0.25s ease-in;
     /*animation-fill-mode: forwards;*/
     transform: translateY(0);
 }

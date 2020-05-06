@@ -1,62 +1,55 @@
 import React, {useEffect, useLayoutEffect, useRef, useState} from "react";
 import classes from "./UpHeader.module.css";
 import Navigation from "./Navigation/Navigation";
-import {Component} from "react";
 
 const UpHeader = () => {
 
-  const myRef = React.createRef();
+  const headerRef = React.createRef();
 
+  const [isMobile, setIsMobile] = useState(true);
+  const [headerWidth, setHeaderWidth] = useState(0);
   const [navOpen, setNavOpen] = useState(false);
-  const [headerFixed, checkHeaderFixed] = useState(true);
-
-  let headerWidth;
-  useEffect(() => {
-    function ccc() {
-      if (myRef && myRef.current) {
-        headerWidth = myRef.current.clientWidth;
-        (headerWidth > 270) ? checkHeaderFixed(false) : checkHeaderFixed(true);
-      }
-    }
-
-    ccc();
-    window.addEventListener('resize', ccc);
-  })
 
   const [headerScrollDown, setHeaderScrollDown] = useState(false);
   const [globalHeaderYoffset, setGlobalHeaderYoffset] = useState(0);
-  const [windowWidth, setWindowWidth] = useState(true);
 
-  useEffect(() => {
-    if (window.clientWidth > 1100) {
-      setWindowWidth(true);
+  useLayoutEffect(() => {
+    function changeVersion() {
+      if (headerRef && headerRef.current) {
+        setHeaderWidth(headerRef.current.clientWidth);
+              headerWidth > 1100 ? setIsMobile(false) : setIsMobile(true);
+              if (!isMobile) {
+                setNavOpen(false);
+              }
+      }
+    }
+    changeVersion();
+    window.addEventListener('resize', changeVersion);
+    return () => {
+      window.removeEventListener('resize', changeVersion);
+    }
+  })
 
-      console.log(window.pageYOffset);
+  // const isBrowser = typeof window !== `undefined` //for SSR
 
-      function scrollHeader() {
-        if (myRef && myRef.current) {
+  useLayoutEffect(() => {
+    function scrollHeader() {
+      //   if (!isBrowser) return { y: 0 }
+      if (!isMobile) {
+        console.log(isMobile);
           if (window.pageYOffset <= globalHeaderYoffset && headerScrollDown === true) { //scroll up, header == false
             setHeaderScrollDown(false);
           } else if (window.pageYOffset > globalHeaderYoffset && headerScrollDown === false) { //scroll down, header == true
             setHeaderScrollDown(true);
           }
           setGlobalHeaderYoffset(window.pageYOffset);
-        }
       }
-
-      window.addEventListener("scroll", function () {
-        scrollHeader();
-      });
-
-      window.removeEventListener("scroll", function () {
-        scrollHeader();
-      });
-
-    } else {
-      setWindowWidth(false);
-      // return null;
     }
-  })
+    window.addEventListener("scroll", scrollHeader);
+    return () => {
+      window.removeEventListener("scroll", scrollHeader);
+    }
+    })
 
   const navLinks = [
     {
@@ -89,11 +82,9 @@ const UpHeader = () => {
           <div className={classes.btn_stick + ' ' + (navOpen ? classes.btn_stick_active : '')}></div>
           <div className={classes.btn_stick + ' ' + (navOpen ? classes.btn_stick_active : '')}></div>
         </div>
-        <div ref={myRef} className={classes.header + ' ' +
-        (navOpen ?
-            (headerFixed ? classes.header_active_fixed : classes.header_active) :
-            (headerFixed ? classes.header_fixed_unactive : ''))
-        + ' ' + (windowWidth ? (headerScrollDown ? classes.header_on_scroll_down : classes.header_on_scroll_up) : '')
+        <div ref = {headerRef} className={classes.header + ' ' +
+        (navOpen ? classes.header_active : classes.header_unactive)
+        + ' ' + (isMobile ? '' : (headerScrollDown ? classes.header_on_scroll_down : classes.header_on_scroll_up))
         }>
           <div className={classes.logo_container}>
             <div className={classes.logo}></div>

@@ -18,8 +18,44 @@ const UpHeader = () => {
         (headerWidth > 270) ? checkHeaderFixed(false) : checkHeaderFixed(true);
       }
     }
+
     ccc();
     window.addEventListener('resize', ccc);
+  })
+
+  const [headerScrollDown, setHeaderScrollDown] = useState(false);
+  const [globalHeaderYoffset, setGlobalHeaderYoffset] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(true);
+
+  useEffect(() => {
+    if (window.clientWidth > 1100) {
+      setWindowWidth(true);
+
+      console.log(window.pageYOffset);
+
+      function scrollHeader() {
+        if (myRef && myRef.current) {
+          if (window.pageYOffset <= globalHeaderYoffset && headerScrollDown === true) { //scroll up, header == false
+            setHeaderScrollDown(false);
+          } else if (window.pageYOffset > globalHeaderYoffset && headerScrollDown === false) { //scroll down, header == true
+            setHeaderScrollDown(true);
+          }
+          setGlobalHeaderYoffset(window.pageYOffset);
+        }
+      }
+
+      window.addEventListener("scroll", function () {
+        scrollHeader();
+      });
+
+      window.removeEventListener("scroll", function () {
+        scrollHeader();
+      });
+
+    } else {
+      setWindowWidth(false);
+      // return null;
+    }
   })
 
   const navLinks = [
@@ -56,7 +92,9 @@ const UpHeader = () => {
         <div ref={myRef} className={classes.header + ' ' +
         (navOpen ?
             (headerFixed ? classes.header_active_fixed : classes.header_active) :
-            (headerFixed ? classes.header_fixed_unactive : ''))}>
+            (headerFixed ? classes.header_fixed_unactive : ''))
+        + ' ' + (windowWidth ? (headerScrollDown ? classes.header_on_scroll_down : classes.header_on_scroll_up) : '')
+        }>
           <div className={classes.logo_container}>
             <div className={classes.logo}></div>
           </div>

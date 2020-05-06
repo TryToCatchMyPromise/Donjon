@@ -178,8 +178,14 @@ display: none;
 
 /*-------------------------PC-HEADER-ANIMATION--------------------------------------------*/
 
-.headerOnScrollDown {
+.header_on_scroll_down {
     transition: all 0.5s ease-in;
     /*animation-fill-mode: forwards;*/
     transform: translateY(-100%);
+}
+
+.header_on_scroll_up {
+    transition: all 0.5s ease-in;
+    /*animation-fill-mode: forwards;*/
+    transform: translateY(0);
 }

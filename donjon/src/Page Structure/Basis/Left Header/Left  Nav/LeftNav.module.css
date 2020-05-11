@@ -20,13 +20,13 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 0 0 0 3%;
+    margin: 0 0 0 6%;
     padding: 10% 10% 10% 0;
     /*border: 1px solid yellow;*/
     transform: translateY(25%);
 
     transition-property: width, transform, margin;
-    transition-duration: 1s;
+    transition-duration: 0.55s;
     transition-timing-function: ease-out;
 }
 
@@ -69,29 +69,31 @@
     /*flex: 1;*/
 
     transition-property: width, height, border-radius, padding;
-    transition-duration: 1s;
+    transition-duration: 0.55s;
     transition-timing-function: ease-out;
 }
 
 .section {
     color: white;
-transform: scale(0);
+    transform: scale(0);
     transform-origin: left center;
 
 
     transition-property: transform;
-    transition-duration: 1s;
+    transition-duration: 0.55s;
     transition-timing-function: ease-out;
 }
 
 .line {
     margin-left: 49%;
+    margin-top: 25%;
+    margin-bottom: 25%;
     /*flex: 1 1 14px;*/
     border-left: 1.2px solid white;
-    height: 14px;
-
-    transition-property: margin;
-    transition-duration: 1s;
+    /*height: 14px;*/
+    height: 30px;
+    transition-property: margin, height;
+    transition-duration: 0.55s;
     transition-timing-function: ease-out;
 }
 
@@ -110,19 +112,23 @@ transform: scale(0);
     /*width: initial;*/
     height: 20px;
 
+
     border-radius: 40px 40px 40px 40px;
     padding: 2% 10% 2% 10%;
 
     transition-property: width, height, border-radius, padding;
-    transition-duration: 1s;
+    transition-duration: 0.55s;
     transition-timing-function: ease-out;
 }
 
 .wrapper:hover .line {
     margin-left: 10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 20px;
 
-    transition-property: margin;
-    transition-duration: 1s;
+    transition-property: margin, height;
+    transition-duration: 0.55s;
     transition-timing-function: ease-out;
 }
 
@@ -131,7 +137,7 @@ transform: scale(0);
     transform-origin: left center;
 
     transition-property: transform;
-    transition-duration: 1s;
+    transition-duration: 0.55s;
     transition-timing-function: ease-out;
 }
 
@@ -139,4 +145,21 @@ transform: scale(0);
     /*font-size: 20px;*/
     /*width: 130px;*/
     transform: scale(1.1);
+}
+
+.circle:hover {
+    /*border: 1px solid rgba(45, 2, 7, 0.95);*/
+    background: rgba(255, 255, 255, 0.2);
+
+}
+
+.circle:hover .section {
+    /*color: rgba(45, 2, 7, 0.95);*/
+
+}
+
+@media (max-width: 1100px) {
+    .wrapper{
+        display: none;
+    }
 }

@@ -1,5 +1,7 @@
 import React from "react";
 import classes from "./LeftNav.module.css";
+import { NavHashLink as Link } from 'react-router-hash-link';
+// import {Link} from 'react-scroll';
 
 const sectionNames = ["Начало", "Разделы", "История", "Инфографика", "Конец"];
 const LeftNav = () => {
@@ -13,7 +15,11 @@ const LeftNav = () => {
                     return (
                         <>
                           <div className={classes.circle}>
-                            <div className={classes.section}>{s}</div>
+                            <div className={classes.section}>
+                              <Link to="/#test">
+                                {s}
+                              </Link>
+                            </div>
                           </div>
                           <div className={classes.line}></div>
                         </>

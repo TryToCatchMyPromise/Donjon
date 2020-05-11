@@ -78,9 +78,18 @@ const ScrollTop = () => {
 
 
   return (
-      <div onClick={up} className={classes.scrollTop}>
-        <div className={classes.scrollTopArrow}></div>
+      <div className={classes.scrollTop_container}>
+        <div onClick={up} className={classes.scrollTop}>
+          <div className={classes.scrollTopArrow}>
+            <div className={classes.stick1_container}>
+              <div className={classes.stick + ' ' + classes.stck1}></div>
+            </div>
+
+            <div className={classes.stick + ' ' + classes.stck2}></div>
+          </div>
+        </div>
       </div>
+
   );
 };
 

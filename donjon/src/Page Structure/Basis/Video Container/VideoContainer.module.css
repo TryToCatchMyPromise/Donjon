@@ -9,24 +9,11 @@
 
 }
 
-/*.main_video {*/
-/*    object-fit: cover;*/
-/*    height: 100%;*/
-/*    width: 100%;*/
-/*    !*height: 100vh;*!*/
-/*    position: absolute;*/
-/*    background-image: url("../../../../src/files/main/beforeVideo.jpg");*/
-/*    !*background-color: rgba(0.1, 0.1, 0.1, 0.1);*!*/
-/*    background-position: center;*/
-/*    background-size: cover;*/
-/*    background-repeat: no-repeat;*/
-/*}*/
-
 .main_video {
     object-fit: cover;
-    height: 100%;
+    /*height: 100%;*/
     width: 100%;
-    /*height: 100vh;*/
+    height: 100vh;
     position: absolute;
 }
 
@@ -35,8 +22,8 @@
 .overlay {
     position: absolute;
     /*object-fit: cover;*/
-
-    height: 100%;
+height: 100vh;
+    /*height: 100%;*/
     width: 100%;
     background: rgba(0, 0, 0, 0.25);
     z-index: 10;

@@ -3,7 +3,7 @@ import classes from "./Infographics.module.css";
 
 const Infographics = () => {
   return (
-      <div className={classes.grid_container}>
+      <div id={"infographics"} className={classes.grid_container}>
         <div className={classes.grid_element}>
           <div className={classes.icon_container}>
             <div className={classes.text}></div>

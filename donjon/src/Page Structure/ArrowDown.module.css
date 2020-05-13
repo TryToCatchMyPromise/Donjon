@@ -1,0 +1,79 @@
+.global_container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    /*border-bottom: 1px solid red;*/
+}
+
+.link {
+    display: contents;
+}
+
+.arrow_container {
+    /*box-sizing: border-box;*/
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 60px;
+    transform: translateY(-26px);
+    /*padding: 10px;*/
+    /*background-color: purple;*/
+    /*left: -40vh;*/
+    /*left: 0;*/
+    /*bottom: 20%;*/
+    z-index: 20;
+    border-radius: 40px;
+    /*background: rgba(255, 255, 255, 0.2);*/
+    /*opacity: 50%;*/
+    /*transition: all 0.5s ease-in;*/
+    /*transform: scale(0.1, 0.1);*/
+    /*border: 0.5px solid rgba(45, 2, 7, 0.95);*/
+    border: 0.8px solid white;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /*transform: translateY(1px);*/
+    animation: movingArrow 1s ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;}
+
+.stick {
+    height: 12px;
+    /*border: 0.5px solid white;*/
+    transform-origin: bottom;
+    background-color: white;
+    width: 1.5px;
+}
+
+.stck1 {
+    transform: translateX(1px) rotate(-45deg);
+    border-left: 0.1px solid rgba(45, 2, 7, 0.95);
+}
+
+.stck2 {
+    transform: translateX(-1px) rotate(45deg);
+    border-right: 0.1px solid rgba(45, 2, 7, 0.95);
+}
+
+@keyframes movingArrow {
+    from {
+        transform: translateY(-100%);
+    }
+    /*50% {*/
+    /*    transform: translateY(0);*/
+    /*}*/
+    to {
+        transform: translateY(100%);
+    }
+}

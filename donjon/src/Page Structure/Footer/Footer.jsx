@@ -3,7 +3,7 @@ import classes from "./Footer.module.css";
 
 const Footer = () => {
   return (
-      <div className={classes.container}>
+      <div id={"end"} className={classes.container}>
         <div className={classes.castle}></div>
         {/*<div className={classes.grid_container}>*/}
         {/*  <div className={classes.item + ' ' + classes.logo}></div>*/}

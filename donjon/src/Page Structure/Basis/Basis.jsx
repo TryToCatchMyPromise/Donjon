@@ -7,20 +7,19 @@ import ImageTransfer from "../Pages content/main_page/Image Transfer/ImageTransf
 import AboutUs from "../Pages content/main_page/AboutUs/AboutUs";
 import classes from "./Basis.module.css";
 import LeftHeaderContainer from "./Left Header/LeftHeaderContainer";
+import ArrowDown from "../ArrowDown";
 
 const Basis = (props) => {
 
   return (
       <>
-        <div className='main-block'>
-          <section className={classes.video_and_menu}>
-            <VideoContainer/>
-
-            <div className={classes.overlay}></div>
-          </section>
-        </div>
+        {/*<section className={classes.video_and_menu}>*/}
+          <VideoContainer/>
+          {/*<div className={classes.overlay}></div>*/}
+        {/*</section>*/}
         <UpHeaderContainer/>
         <LeftHeaderContainer/>
+        <ArrowDown/>
       </>
   );
 };

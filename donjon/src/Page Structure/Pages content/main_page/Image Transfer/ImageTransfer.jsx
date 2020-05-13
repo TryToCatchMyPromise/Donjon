@@ -5,7 +5,7 @@ console.log(classes);
 
 const ImageTransfer = () => {
   return (
-      <div>
+      <div id={"image_transfer"}>
         <div className={classes.image_flex_container}>
 
           <div className={classes.image_items + ' ' + classes.secondImage}>

@@ -39,7 +39,7 @@ const UpHeader = () => {
         console.log(isMobile);
           if (window.pageYOffset <= globalHeaderYoffset && headerScrollDown === true) { //scroll up, header == false
             setHeaderScrollDown(false);
-          } else if (window.pageYOffset > globalHeaderYoffset && headerScrollDown === false) { //scroll down, header == true
+          } else if (window.pageYOffset > globalHeaderYoffset && headerScrollDown === false  && window.pageYOffset > 300) { //scroll down, header == true
             setHeaderScrollDown(true);
           }
           setGlobalHeaderYoffset(window.pageYOffset);

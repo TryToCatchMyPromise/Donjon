@@ -5,7 +5,7 @@ import History from "./History/History";
 
 const AboutUs = () => {
   return (
-      <div id={'test'} className={classes.wrapper}>
+      <div id={'history'} className={classes.wrapper}>
         {/*<a name = "test"></a>*/}
         <div className={classes.overlay}>
           <div className={classes.data_container}>

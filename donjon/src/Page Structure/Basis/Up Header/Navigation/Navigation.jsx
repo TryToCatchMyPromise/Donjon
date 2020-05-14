@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import classes from "./Navigation.module.css";
+import {NavLink} from "react-router-dom";
 
 const Navigation = () => {
 
@@ -10,16 +11,23 @@ const Navigation = () => {
   return (
       <nav className={ navOpen ? 'active' : '' }>
 
+        <div className={classes.nav_item + navOpen ? 'active' : '' }>
+          <NavLink to="/main">Главная</NavLink>
+        </div>
 
+        <div className={classes.nav_item}>
+          <NavLink to="/hotel">Гостиница</NavLink>
+        </div>
+        <div className={classes.nav_item}>
+          <NavLink to="/restaurant">Ресторан</NavLink>
+        </div>
+        <div className={classes.nav_item}>
+          <NavLink to="/services">Услуги</NavLink>
+        </div>
+        <div className={classes.nav_item}>
+          <NavLink to="/contacts">Контакты</NavLink>
+        </div>
 
-
-
-
-        <div className={classes.nav_item + navOpen ? 'active' : '' }><a href="/">Главная</a></div>
-        <div className={classes.nav_item}><a href="/">Гостиница</a></div>
-        <div className={classes.nav_item}><a href="/">Ресторан</a></div>
-        <div className={classes.nav_item}><a href="/">Услуги</a></div>
-        <div className={classes.nav_item}><a href="/">Контакты</a></div>
       </nav>
   );
 };

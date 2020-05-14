@@ -1,6 +1,6 @@
 import React from "react";
 import {connect} from "react-redux";
-import Footer from "./Footer";
+import HotelPage from "./HotelPage";
 
 
 let mapStateToProps = (state) => {
@@ -13,6 +13,6 @@ let mapDispatchToProps = (dispatch) => {
 
 };
 
-const FooterContainer = connect(mapStateToProps, mapDispatchToProps)(Footer);
+const HotelPageContainer = connect(mapStateToProps, mapDispatchToProps)(HotelPage);
 
-export default FooterContainer;
+export default HotelPageContainer;

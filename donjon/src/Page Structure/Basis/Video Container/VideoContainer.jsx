@@ -1,9 +1,31 @@
-import React from "react";
+import React, {createRef, useEffect, useLayoutEffect} from "react";
 import classes from "./VideoContainer.module.css";
 import im from "../../../files/main/beforeVideo.jpg";
 import vid from "../../../files/my_video.mp4";
 
+
+// let divRef = createRef();
+
+
+
+
+// const stl = {
+//   height: calc(var(--vh, 1vh) * 100)
+// }
+
 const VideoContainer = () => {
+
+  // useLayoutEffect(() => {
+  //   window.addEventListener('resize', vhSetting);
+  //   return () => {
+  //     window.removeEventListener("resize", vhSetting);
+  //   }
+  // })
+
+  // useEffect(() => {
+  //   vhSetting();
+  // })
+
   return (
       <div className={classes.video_container} id={"start"}>
         <video className={classes.main_video}

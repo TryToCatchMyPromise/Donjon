@@ -1,6 +1,6 @@
 import React from "react";
 import {connect} from "react-redux";
-import Footer from "./Footer";
+import ContactsPage from "./ContactsPage";
 
 
 let mapStateToProps = (state) => {
@@ -13,6 +13,6 @@ let mapDispatchToProps = (dispatch) => {
 
 };
 
-const FooterContainer = connect(mapStateToProps, mapDispatchToProps)(Footer);
+const ContactsPageContainer = connect(mapStateToProps, mapDispatchToProps)(ContactsPage);
 
-export default FooterContainer;
+export default ContactsPageContainer;

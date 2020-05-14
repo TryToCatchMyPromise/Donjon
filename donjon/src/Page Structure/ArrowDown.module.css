@@ -5,7 +5,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
+    /*height: 100vh;*/
+    height: calc(var(--vh, 1vh) * 100);
     width: 100%;
     /*border-bottom: 1px solid red;*/
 }
@@ -75,5 +76,11 @@
     /*}*/
     to {
         transform: translateY(100%);
+    }
+}
+
+@media (min-width: 601px) {
+    .global_container {
+        height: 100vh;
     }
 }

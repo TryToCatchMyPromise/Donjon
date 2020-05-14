@@ -1,9 +1,8 @@
 import React from "react";
 import classes from "./ImageTransfer.module.css";
 
-console.log(classes);
-
-const ImageTransfer = () => {
+const ImageTransfer = (props) => {
+  debugger;
   return (
       <div id={"image_transfer"}>
         <div className={classes.image_flex_container}>
@@ -16,7 +15,7 @@ const ImageTransfer = () => {
               <div className={classes.text_overlay}>Ваши кони устали, и сил уже нет?
                 Гостиница на 13 номеров послужит отличным пристанищем для путников со всех уголков света
               </div>
-              <div className={classes.phone}>+7 (4842) 56-57-56</div>
+              <div className={classes.phone}>+{props.contacts.hotel.phone}</div>
               <div className={classes.button}>Подробнее</div>
             </div>
             <div className={classes.text}>Ваши кони устали, и сил уже нет?
@@ -34,7 +33,7 @@ const ImageTransfer = () => {
                 смогут позволить себе люди из всех сословий любого достатка в залах
                 нашего ресторана
               </div>
-              <div className={classes.phone}>+7 (4842) 22-49-96</div>
+              <div className={classes.phone}>+{props.contacts.restaurant.phone}</div>
               <div className={classes.button}>Подробнее</div>
             </div>
             <div className={classes.text}>Вы голодны, а доставка слона из
@@ -52,7 +51,7 @@ const ImageTransfer = () => {
               <div className={classes.text_overlay}>Совершить омовения в бассейне, закалить тела горячим паром в сауне
                 и развить боевые навыки в тренажёрном зале
                 сможет дружная компания из любого ордена!</div>
-              <div className={classes.phone}>+7 (4842) 56-57-56</div>
+              <div className={classes.phone}>+{props.contacts.services.phone}</div>
               <div className={classes.button}>Подробнее</div>
             </div>
             <div className={classes.text}>Совершить омовения в бассейне, закалить тела горячим паром в сауне

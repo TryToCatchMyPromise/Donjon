@@ -1,6 +1,6 @@
 import React from "react";
 import {connect} from "react-redux";
-import Footer from "./Footer";
+import RestaurantPage from "./RestaurantPage";
 
 
 let mapStateToProps = (state) => {
@@ -13,6 +13,6 @@ let mapDispatchToProps = (dispatch) => {
 
 };
 
-const FooterContainer = connect(mapStateToProps, mapDispatchToProps)(Footer);
+const RestaurantPageContainer = connect(mapStateToProps, mapDispatchToProps)(RestaurantPage);
 
-export default FooterContainer;
+export default RestaurantPageContainer;

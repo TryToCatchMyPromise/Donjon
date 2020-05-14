@@ -5,7 +5,7 @@ import classes from "./ArrowDown.module.css";
 const ArrowDown = () => {
   return (
       <div className={classes.global_container}>
-        <Link smooth to="/#image_transfer"
+        <Link smooth to="#image_transfer"
 
 
               className={classes.link}>

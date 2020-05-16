@@ -1,7 +1,6 @@
 import React from "react";
 import classes from "./LeftNav.module.css";
 import { NavHashLink as Link } from 'react-router-hash-link';
-// import {Link} from 'react-scroll';
 
 // const sectionNames = ["Начало", "Разделы", "История", "Инфографика", "Конец"];
 
@@ -29,7 +28,7 @@ const sectionNames = [
 ]
 
 const LeftNav = (props) => {
-  debugger;
+  // debugger;
   return (
       <div className={classes.wrapper}>
         {/*<div className={classes.menu_container}>*/}

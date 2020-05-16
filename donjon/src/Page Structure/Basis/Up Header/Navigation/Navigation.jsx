@@ -4,30 +4,23 @@ import {NavLink} from "react-router-dom";
 
 const Navigation = () => {
 
-  const [ navOpen, setNavOpen ] = useState(0)
-  const [ hoverIndex, setHoverIndex ] = useState(-1)
-
-
   return (
-      <nav className={ navOpen ? 'active' : '' }>
-
-        <div className={classes.nav_item + navOpen ? 'active' : '' }>
-          <NavLink to="/">Главная</NavLink>
-        </div>
-
-        <div className={classes.nav_item}>
-          <NavLink to="/hotel">Гостиница</NavLink>
-        </div>
-        <div className={classes.nav_item}>
-          <NavLink to="/restaurant">Ресторан</NavLink>
-        </div>
-        <div className={classes.nav_item}>
-          <NavLink to="/services">Услуги</NavLink>
-        </div>
-        <div className={classes.nav_item}>
-          <NavLink to="/contacts">Контакты</NavLink>
-        </div>
-
+      <nav>
+        <NavLink to="/">
+          <div className={classes.nav_item}>Главная</div>
+        </NavLink>
+        <NavLink to="/hotel">
+          <div className={classes.nav_item}>Гостиница</div>
+        </NavLink>
+        <NavLink to="/restaurant">
+          <div className={classes.nav_item}>Ресторан</div>
+        </NavLink>
+        <NavLink to="/services">
+          <div className={classes.nav_item}>Услуги</div>
+        </NavLink>
+        <NavLink to="/contacts">
+          <div className={classes.nav_item}>Контакты</div>
+        </NavLink>
       </nav>
   );
 };

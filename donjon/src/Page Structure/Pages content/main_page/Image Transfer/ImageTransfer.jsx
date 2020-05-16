@@ -1,5 +1,7 @@
 import React from "react";
 import classes from "./ImageTransfer.module.css";
+import {NavLink} from "react-router-dom";
+
 
 const ImageTransfer = (props) => {
   // debugger;
@@ -16,7 +18,9 @@ const ImageTransfer = (props) => {
                 Гостиница на 13 номеров послужит отличным пристанищем для путников со всех уголков света
               </div>
               <div className={classes.phone}>+{props.contacts.hotel.phone}</div>
-              <div className={classes.button}>Подробнее</div>
+              <NavLink to="/hotel">
+                <div className={classes.button}>Подробнее</div>
+              </NavLink>
             </div>
             <div className={classes.text}>Ваши кони устали, и сил уже нет?
               Гостиница на 13 номеров послужит отличным пристанищем для путников со всех уголков света
@@ -34,7 +38,9 @@ const ImageTransfer = (props) => {
                 нашего ресторана
               </div>
               <div className={classes.phone}>+{props.contacts.restaurant.phone}</div>
-              <div className={classes.button}>Подробнее</div>
+              <NavLink to="/restaurant">
+                <div className={classes.button}>Подробнее</div>
+              </NavLink>
             </div>
             <div className={classes.text}>Вы голодны, а доставка слона из
               Индии вам не по карману? Искушать яств местных и заморских
@@ -52,7 +58,9 @@ const ImageTransfer = (props) => {
                 и развить боевые навыки в тренажёрном зале
                 сможет дружная компания из любого ордена!</div>
               <div className={classes.phone}>+{props.contacts.services.phone}</div>
-              <div className={classes.button}>Подробнее</div>
+              <NavLink to="/services">
+                <div className={classes.button}>Подробнее</div>
+              </NavLink>
             </div>
             <div className={classes.text}>Совершить омовения в бассейне, закалить тела горячим паром в сауне
               и развить боевые навыки в тренажёрном зале

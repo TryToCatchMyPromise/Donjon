@@ -2,10 +2,10 @@ import React from "react";
 import { NavHashLink as Link } from 'react-router-hash-link';
 import classes from "./ArrowDown.module.css";
 
-const ArrowDown = () => {
+const ArrowDown = (props) => {
   return (
       <div className={classes.global_container}>
-        <Link smooth to="#image_transfer"
+        <Link smooth to={"#" + `${props.hash}`}
 
 
               className={classes.link}>

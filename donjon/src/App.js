@@ -34,7 +34,7 @@ const App = (props) => {
       <div className="app-wrapper">
         <BasisContainer/>
         <div className="app-wrapper-content">
-          <Route path="/main" render={
+          <Route exact path="/" render={
             () => <MainPageContainer/>}/>
           <Route path="/hotel" render={
             () => <HotelPageContainer/>}/>

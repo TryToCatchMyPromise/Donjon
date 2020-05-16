@@ -14,7 +14,7 @@ let initialState = {
     },
 };
 
-const profileReducer = (state = initialState, action) => {
+const contactsReducer = (state = initialState, action) => {
   switch (action.type) {
     default:
       return state;
@@ -22,4 +22,4 @@ const profileReducer = (state = initialState, action) => {
 };
 
 
-export default profileReducer;
+export default contactsReducer;

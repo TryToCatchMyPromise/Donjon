@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./ImageTransfer.module.css";
 
 const ImageTransfer = (props) => {
-  debugger;
+  // debugger;
   return (
       <div id={"image_transfer"}>
         <div className={classes.image_flex_container}>

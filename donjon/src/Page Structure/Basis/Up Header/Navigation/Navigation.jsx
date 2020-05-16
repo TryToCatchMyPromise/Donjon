@@ -12,7 +12,7 @@ const Navigation = () => {
       <nav className={ navOpen ? 'active' : '' }>
 
         <div className={classes.nav_item + navOpen ? 'active' : '' }>
-          <NavLink to="/main">Главная</NavLink>
+          <NavLink to="/">Главная</NavLink>
         </div>
 
         <div className={classes.nav_item}>

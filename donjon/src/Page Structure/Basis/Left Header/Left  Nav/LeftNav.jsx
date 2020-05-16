@@ -28,12 +28,13 @@ const sectionNames = [
   },
 ]
 
-const LeftNav = () => {
+const LeftNav = (props) => {
+  debugger;
   return (
       <div className={classes.wrapper}>
         {/*<div className={classes.menu_container}>*/}
           <div className={classes.nav_container}>
-            {sectionNames.map(
+            {props.section.map(
                 (s, index, array) => {
                   // debugger;
                   if (index !== array.length - 1) {

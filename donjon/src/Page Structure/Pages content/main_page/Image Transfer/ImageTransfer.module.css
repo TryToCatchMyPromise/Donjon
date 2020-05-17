@@ -148,6 +148,10 @@
     transition-timing-function: ease-out;
 }
 
+.btn_link {
+   display: contents;
+}
+
 .button {
     position: relative;
     display: flex;

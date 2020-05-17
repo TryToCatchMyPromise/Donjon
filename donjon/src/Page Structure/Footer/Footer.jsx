@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./Footer.module.css";
 
 const Footer = (props) => {
-  debugger;
+  // debugger;
   return (
       <div id={"end"} className={classes.container}>
         <div className={classes.castle}></div>

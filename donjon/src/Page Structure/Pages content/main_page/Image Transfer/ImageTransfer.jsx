@@ -18,7 +18,7 @@ const ImageTransfer = (props) => {
                 Гостиница на 13 номеров послужит отличным пристанищем для путников со всех уголков света
               </div>
               <div className={classes.phone}>+{props.contacts.hotel.phone}</div>
-              <NavLink to="/hotel">
+              <NavLink to="/hotel"  className={classes.btn_link}>
                 <div className={classes.button}>Подробнее</div>
               </NavLink>
             </div>
@@ -38,7 +38,7 @@ const ImageTransfer = (props) => {
                 нашего ресторана
               </div>
               <div className={classes.phone}>+{props.contacts.restaurant.phone}</div>
-              <NavLink to="/restaurant">
+              <NavLink to="/restaurant"  className={classes.btn_link}>
                 <div className={classes.button}>Подробнее</div>
               </NavLink>
             </div>
@@ -58,7 +58,7 @@ const ImageTransfer = (props) => {
                 и развить боевые навыки в тренажёрном зале
                 сможет дружная компания из любого ордена!</div>
               <div className={classes.phone}>+{props.contacts.services.phone}</div>
-              <NavLink to="/services">
+              <NavLink to="/services"  className={classes.btn_link}>
                 <div className={classes.button}>Подробнее</div>
               </NavLink>
             </div>

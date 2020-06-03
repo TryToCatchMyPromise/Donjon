@@ -1,4 +1,8 @@
+@import "../../../../fonts/Haymaker.css";
+
 .wrapper {
+    font-family: "AA Haymaker", sans-serif;
+    font-size: 14px;
     display: flex;
     align-items: center;
     /*width: 100%;*/

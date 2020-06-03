@@ -1,7 +1,9 @@
+@import '../../../fonts/Haymaker.css';
+
 /*-------------------------HEADER--------------------------------------------*/
 
 .header {
-    font-family: "AA Haymaker", regular;
+    font-family: "AA Haymaker", sans-serif;
     letter-spacing: 1px;
     /*font-weight: lighter;*/
     position: fixed;

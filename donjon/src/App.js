@@ -11,6 +11,7 @@ import RestaurantPageContainer from "./Page Structure/Pages content/restaurant_p
 import ServicesPageContainer from "./Page Structure/Pages content/services_page/ServicesPageContainer";
 import ContactsPageContainer from "./Page Structure/Pages content/contacts/ContactsPageContainer";
 
+
 function vhSetting() {
   // We execute the same script as before
   let vh = window.innerHeight * 0.01;

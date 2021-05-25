@@ -2,13 +2,13 @@ import React from "react";
 import {connect} from "react-redux";
 import ArrowDownSwitchContainer from "src/Page Structure/ArrowDownSwitchContainer";
 
-let mapStateToProps = (state) => {
+const mapStateToProps = (state) => {
   return {
     arrowDown: state.arrowDown,
   }
 };
 
-let mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = (dispatch) => {
   return {
 
   }

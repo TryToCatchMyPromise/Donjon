@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "src/Page Structure/Basis/Left Header/Left  Nav/LeftNav.module.css";
 import { NavHashLink as Link } from 'react-router-hash-link';
 
@@ -27,13 +26,13 @@ const sectionNames = [
   },
 ]
 
-const LeftNav = (props) => {
+const LeftNav = ({section}) => {
   // debugger;
   return (
       <div className={classes.wrapper}>
-        {/*<div className={classes.menu_container}>*/}
+        {/* <div className={classes.menu_container}> */ }
           <div className={classes.nav_container}>
-            {props.section.map(
+            {section.map(
                 (s, index, array) => {
                   // debugger;
                   if (index !== array.length - 1) {
@@ -50,31 +49,31 @@ const LeftNav = (props) => {
 
                           </div>
                         </Link>
-                          <div className={classes.line}></div>
+                          <div className={classes.line}/>
 
                         </>
                     )
-                  } else {
+                  }
                     return (
-                        <Link smooth to={s.hash}>
+                        <Link key={s.hash} smooth to={s.hash}>
                         <div className={classes.circle}>
                           <div className={classes.section}>{s.text}</div>
                         </div>
                         </Link>
                     )
 
-                  }
+
                 }
             )}
-            {/*<div className={classes.circle}></div>*/}
-            {/*<div className={classes.line}></div>*/}
-            {/*<div className={classes.circle}></div>*/}
-            {/*<div className={classes.line}></div>*/}
-            {/*<div className={classes.circle}></div>*/}
-            {/*<div className={classes.line}></div>*/}
-            {/*<div className={classes.circle}></div>*/}
+            {/* <div className={classes.circle}></div> */ }
+            {/* <div className={classes.line}></div> */ }
+            {/* <div className={classes.circle}></div> */ }
+            {/* <div className={classes.line}></div> */ }
+            {/* <div className={classes.circle}></div> */ }
+            {/* <div className={classes.line}></div> */ }
+            {/* <div className={classes.circle}></div> */ }
           </div>
-        {/*</div>*/}
+        {/* </div> */ }
 
       </div>
 

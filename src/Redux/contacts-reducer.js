@@ -1,4 +1,4 @@
-let initialState = {
+const initialState = {
 
     hotel: {
       phone: "7 (4842) 56-57-56",

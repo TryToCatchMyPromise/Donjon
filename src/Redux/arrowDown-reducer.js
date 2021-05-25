@@ -1,4 +1,4 @@
-let initialState = {
+const initialState = {
 hash: {
   main: "image_transfer",
   hotel: '',

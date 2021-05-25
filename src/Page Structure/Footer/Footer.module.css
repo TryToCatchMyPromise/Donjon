@@ -14,7 +14,7 @@
 position: absolute;
     right: 0;
     /*bottom: 0;*/
-    background-image: url("../..Basis/Footer/footerCastle.svg");
+    background-image: url("src/files/Basis/Footer/footerCastle.svg");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
@@ -99,7 +99,7 @@ margin-left: 30px;
 .logo {
     position: relative;
     top: -5px;
-    background-image: url("../..Basis/Footer/footerLogo.png");
+    background-image: url("src/files/Basis/Footer/footerLogo.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;

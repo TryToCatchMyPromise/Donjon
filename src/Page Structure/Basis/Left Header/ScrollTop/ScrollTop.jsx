@@ -1,10 +1,10 @@
-import React, {useLayoutEffect, useState} from "react";
+import {useLayoutEffect, useState} from "react";
 import classes from "src/Page Structure/Basis/Left Header/ScrollTop/ScrollTop.module.css";
 
-function up() {
+const up = () => {
   document.body.style.opacity = "0.5";
   let t;
-  let length = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+  const length = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
   if (length > 0) {
     window.scrollBy(0, -20);
     t = setTimeout(up, 5);
@@ -75,7 +75,7 @@ const ScrollTop = () => {
 const [isTop, setIsTop] = useState(true);
 
   function checkIfTop() {
-    (window.pageYOffset < 400) ? setIsTop(true) : setIsTop(false);
+    return (window.pageYOffset < 400) ? setIsTop(true) : setIsTop(false);
   }
 
   useLayoutEffect(() => {
@@ -88,10 +88,10 @@ const [isTop, setIsTop] = useState(true);
 
   return (
       <div className={classes.scrollTop_container}>
-        <div onClick={up} className={classes.scrollTop + ' ' + (isTop ? classes.disabled : '')}>
+        <div role='button' tabIndex={0} onClick={up} onKeyDown={up} className={`${classes.scrollTop} ${(isTop ? classes.disabled : '')}`}>
           <div className={classes.scrollTopArrow}>
-            <div className={classes.stick + ' ' + classes.stck1}></div>
-            <div className={classes.stick + ' ' + classes.stck2}></div>
+            <div className={`${classes.stick} ${classes.stck1}`}/>
+            <div className={`${classes.stick} ${classes.stck2}`}/>
           </div>
         </div>
       </div>

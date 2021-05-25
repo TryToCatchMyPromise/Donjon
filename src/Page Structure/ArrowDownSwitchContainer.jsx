@@ -1,25 +1,24 @@
-import React from "react";
 import {Route, Switch} from "react-router";
 import ArrowDown from "src/Page Structure/ArrowDown";
 
-const ArrowDownSwitchContainer = (props) => {
+const ArrowDownSwitchContainer = ({arrowDown}) => {
 
   return (
       <Switch>
-        <Route exact path={"/"}>
-          <ArrowDown hash = {props.arrowDown.hash.main}/>
+        <Route exact path="/">
+          <ArrowDown hash = {arrowDown.hash.main}/>
         </Route>
-        <Route path={"/hotel"}>
-          <ArrowDown hash = {props.arrowDown.hash.hotel}/>
+        <Route path="/hotel">
+          <ArrowDown hash = {arrowDown.hash.hotel}/>
         </Route>
-        <Route path={"/restaurant"}>
-          <ArrowDown hash = {props.arrowDown.hash.restaurant}/>
+        <Route path="/restaurant">
+          <ArrowDown hash = {arrowDown.hash.restaurant}/>
         </Route>
-        <Route path={"/services"}>
-          <ArrowDown hash = {props.arrowDown.hash.services}/>
+        <Route path="/services">
+          <ArrowDown hash = {arrowDown.hash.services}/>
         </Route>
-        <Route path={"/contacts"}>
-          <ArrowDown hash = {props.arrowDown.hash.contacts}/>
+        <Route path="/contacts">
+          <ArrowDown hash = {arrowDown.hash.contacts}/>
         </Route>
 
       </Switch>

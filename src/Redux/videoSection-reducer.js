@@ -1,4 +1,4 @@
-let initialState = {
+const initialState = {
 link: {
   main: "../../../files/my_video.mp4",
   hotel: '',

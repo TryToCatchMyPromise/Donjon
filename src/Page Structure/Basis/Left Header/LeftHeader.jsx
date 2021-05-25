@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "src/Page Structure/Basis/Left Header/LeftHeader.module.css";
 import ScrollTop from "src/Page Structure/Basis/Left Header/ScrollTop/ScrollTop";
 import LeftNav from "src/Page Structure/Basis/Left Header/Left  Nav/LeftNav";
@@ -10,7 +9,7 @@ const LeftHeader = () => {
         <div className={classes.left_nav}>
           <LeftNavContainer/>
         </div>
-        {/*<LeftNav className={classes.left_nav}/>*/}
+        {/* <LeftNav className={classes.left_nav}/> */}
         <div className={classes.scrolltop}>
           <ScrollTop/>
         </div>

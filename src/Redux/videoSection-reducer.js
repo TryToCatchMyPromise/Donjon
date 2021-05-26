@@ -1,20 +1,18 @@
 const initialState = {
-link: {
-  main: "../../../files/my_video.mp4",
-  hotel: '',
-  restaurant: '',
-  services: '',
-  contacts: '',
-
+  link: {
+    main: '../../../files/my_video.mp4',
+    hotel: '',
+    restaurant: '',
+    services: '',
+    contacts: ''
+  }
 }
-};
 
 const videoSectionReducer = (state = initialState, action) => {
   switch (action.type) {
     default:
-      return state;
+      return state
   }
-};
+}
 
-
-export default videoSectionReducer;
+export default videoSectionReducer

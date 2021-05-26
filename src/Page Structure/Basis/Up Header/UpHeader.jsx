@@ -1,6 +1,6 @@
-import React, {useEffect, useLayoutEffect, useRef, useState} from "react";
-import classes from "src/Page Structure/Basis/Up Header/UpHeader.module.css";
-import Navigation from "src/Page Structure/Basis/Up Header/Navigation/Navigation";
+import {createRef, useLayoutEffect, useState} from 'react'
+import classes from 'src/Page Structure/Basis/Up Header/UpHeader.module.css'
+import Navigation from 'src/Page Structure/Basis/Up Header/Navigation/Navigation'
 
 // function solve(n) {
 //   // Your code here
@@ -65,7 +65,6 @@ import Navigation from "src/Page Structure/Basis/Up Header/Navigation/Navigation
 // const result = delimiter.split(new RegExp(separators.join('|'), 'g'));
 // console.log(result);
 
-
 // debugger;
 // let toCamelCase = (str) => {
 //   if (str.length < 1) {return ""}
@@ -84,10 +83,8 @@ import Navigation from "src/Page Structure/Basis/Up Header/Navigation/Navigation
 // toCamelCase("Vobla_test-ogurez");
 // toCamelCase("---to-my-oooooold-friend");
 
-
 // let str = "sss";
 // console.log(str[0].toUpperCase());
-
 
 //   A.reduce( (acc, cur, ind) => {
 //
@@ -114,23 +111,6 @@ import Navigation from "src/Page Structure/Basis/Up Header/Navigation/Navigation
 //
 //   } , {isUniq: [], leftNum: 0, newArr: [], result: 0})
 // }
-
-
-console.log(a) // undefinded
-var a = 6;
-// console.log(b) // error, так как es6 запрещает доступ к b перед инициализацией ReferenceError: Cannot access 'b' before initialization
-let b = 6;  // должна стоять ; так как error Была сделана попытка вызвать значение как функцию
-
-// let a = 5; // error, так как нельзя второй раз объявить Parsing error: Identifier 'a' has already been declared
-(function() {
-  let a = 6;
-  console.log(a) //6
-  if(a>=6) {
-    let a = 10;
-    console.log(a); //10
-  }
-  console.log(a); //6
-})();
 
 // const country = {
 //   values: ['rus', 'by', 'vg', 'us'],
@@ -165,43 +145,31 @@ let b = 6;  // должна стоять ; так как error Была сдел
 // console.log(result(14));
 // console.log(result(null));
 
-const arr = [1, 2, 3, 5, 8, 13];
-
-for (var i = 0 ; i < arr.length; i++){
-  (function(j){
-    setTimeout(() => {
-      console.log(`${arr[j]}`)
-    }, 1500)
-  })(i)
-}
-
-
 const UpHeader = () => {
+  const headerRef = createRef()
 
-  const headerRef = React.createRef();
+  const [isMobile, setIsMobile] = useState(true)
+  const [headerWidth, setHeaderWidth] = useState(0)
+  const [navOpen, setNavOpen] = useState(false)
 
-  const [isMobile, setIsMobile] = useState(true);
-  const [headerWidth, setHeaderWidth] = useState(0);
-  const [navOpen, setNavOpen] = useState(false);
-
-  const [headerScrollDown, setHeaderScrollDown] = useState(false);
-  const [globalHeaderYoffset, setGlobalHeaderYoffset] = useState(0);
+  const [headerScrollDown, setHeaderScrollDown] = useState(false)
+  const [globalHeaderYoffset, setGlobalHeaderYoffset] = useState(0)
 
   useLayoutEffect(() => {
     function changeVersion() {
       if (headerRef && headerRef.current) {
-        setHeaderWidth(headerRef.current.clientWidth);
-        headerWidth > 1100 ? setIsMobile(false) : setIsMobile(true);
+        setHeaderWidth(headerRef.current.clientWidth)
+        setIsMobile(headerWidth > 1100)
         if (!isMobile) {
-          setNavOpen(false);
+          setNavOpen(false)
         }
       }
     }
 
-    changeVersion();
-    window.addEventListener('resize', changeVersion);
+    changeVersion()
+    window.addEventListener('resize', changeVersion)
     return () => {
-      window.removeEventListener('resize', changeVersion);
+      window.removeEventListener('resize', changeVersion)
     }
   })
 
@@ -211,67 +179,78 @@ const UpHeader = () => {
     function scrollHeader() {
       //   if (!isBrowser) return { y: 0 }
       if (!isMobile) {
-        console.log(isMobile);
-        if (window.pageYOffset <= globalHeaderYoffset && headerScrollDown === true) { //scroll up, header == false
-          setHeaderScrollDown(false);
-        } else if (window.pageYOffset > globalHeaderYoffset && headerScrollDown === false && window.pageYOffset > 300) { //scroll down, header == true
-          setHeaderScrollDown(true);
+        if (window.pageYOffset <= globalHeaderYoffset && headerScrollDown === true) {
+          // scroll up, header == false
+          setHeaderScrollDown(false)
+        } else if (window.pageYOffset > globalHeaderYoffset && headerScrollDown === false && window.pageYOffset > 300) {
+          // scroll down, header == true
+          setHeaderScrollDown(true)
         }
-        setGlobalHeaderYoffset(window.pageYOffset);
+        setGlobalHeaderYoffset(window.pageYOffset)
       }
     }
 
-    window.addEventListener("scroll", scrollHeader);
+    window.addEventListener('scroll', scrollHeader)
     return () => {
-      window.removeEventListener("scroll", scrollHeader);
+      window.removeEventListener('scroll', scrollHeader)
     }
   })
 
   const navLinks = [
     {
       text: 'Главная',
-      path: '/',
+      path: '/'
     },
     {
       text: 'Гостиница',
-      path: '/hotel',
+      path: '/hotel'
     },
     {
       text: 'Ресторан',
-      path: '/restaurant',
+      path: '/restaurant'
     },
     {
       text: 'Услуги',
-      path: '/services',
+      path: '/services'
     },
     {
       text: 'Контакты',
-      path: '/contacts',
-    },
+      path: '/contacts'
+    }
   ]
 
   return (
-      <>
-        <div className={classes.close_button} onClick={() => {
+    <>
+      <div
+        role='button'
+        tabIndex={0}
+        className={classes.close_button}
+        onClick={() => {
           setNavOpen(!navOpen)
-        }}>
-          <div className={classes.btn_stick + ' ' + (navOpen ? classes.btn_stick_active : '')}></div>
-          <div className={classes.btn_stick + ' ' + (navOpen ? classes.btn_stick_active : '')}></div>
+        }}
+        onKeyDown={() => {
+          setNavOpen(!navOpen)
+        }}
+      >
+        <div className={`${classes.btn_stick} ${navOpen ? classes.btn_stick_active : ''}`} />
+        <div className={`${classes.btn_stick} ${navOpen ? classes.btn_stick_active : ''}`} />
+      </div>
+      <div
+        ref={headerRef}
+        className={`${classes.header} ${navOpen ? classes.header_active : classes.header_unactive} ${
+          isMobile ? '' : headerScrollDown ? classes.header_on_scroll_down : classes.header_on_scroll_up
+        }`}
+      >
+        <div className={classes.logo_container}>
+          <div className={classes.logo} />
         </div>
-        <div ref={headerRef} className={classes.header + ' ' +
-        (navOpen ? classes.header_active : classes.header_unactive)
-        + ' ' + (isMobile ? '' : (headerScrollDown ? classes.header_on_scroll_down : classes.header_on_scroll_up))
-        }>
-          <div className={classes.logo_container}>
-            <div className={classes.logo}></div>
-          </div>
-          <Navigation navLinks={navLinks}/>
-          <div className={classes.btn_container}>
-            <div className={classes.btn}>Оставить заявку</div>
-          </div>
+        <Navigation navLinks={navLinks} />
+        <div className={classes.btn_container}>
+          <div className={classes.btn}>Оставить заявку</div>
         </div>
-      </>
-  );
-};
+      </div>
+    </>
+  )
+}
 
-export default UpHeader;
+export default UpHeader

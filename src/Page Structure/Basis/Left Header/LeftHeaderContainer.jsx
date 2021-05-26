@@ -1,8 +1,6 @@
-import React from "react";
-import LeftHeader from "src/Page Structure/Basis/Left Header/LeftHeader";
-import {connect} from "react-redux";
+import LeftHeader from 'src/Page Structure/Basis/Left Header/LeftHeader'
+import {connect} from 'react-redux'
 
-const LeftHeaderContainer = connect()(LeftHeader);
+const LeftHeaderContainer = connect()(LeftHeader)
 
-export default LeftHeaderContainer;
-
+export default LeftHeaderContainer

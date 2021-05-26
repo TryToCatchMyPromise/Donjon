@@ -1,18 +1,16 @@
-import React from "react";
-import {connect} from "react-redux";
-import RestaurantPage from "src/Page Structure/Pages content/restaurant_page/RestaurantPage";
+import {connect} from 'react-redux'
+import RestaurantPage from 'src/Page Structure/Pages content/restaurant_page/RestaurantPage'
 
-
-let mapStateToProps = (state) => {
+const mapStateToProps = (state) => {
   return {
-    contacts: state.contacts,
+    contacts: state.contacts
   }
-};
+}
 
-let mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = () => {
+  return null
+}
 
-};
+const RestaurantPageContainer = connect(mapStateToProps, mapDispatchToProps)(RestaurantPage)
 
-const RestaurantPageContainer = connect(mapStateToProps, mapDispatchToProps)(RestaurantPage);
-
-export default RestaurantPageContainer;
+export default RestaurantPageContainer

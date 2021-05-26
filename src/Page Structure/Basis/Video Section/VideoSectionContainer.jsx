@@ -1,19 +1,16 @@
-import React from "react";
-import {connect} from "react-redux";
-import VideoSectionSwitchContainer from "src/Page Structure/Basis/Video Section/VideoSectionSwitchContainer";
+import {connect} from 'react-redux'
+import VideoSectionSwitchContainer from 'src/Page Structure/Basis/Video Section/VideoSectionSwitchContainer'
 
-let mapStateToProps = (state) => {
+const mapStateToProps = (state) => {
   return {
-    videoSection: state.videoSection,
+    videoSection: state.videoSection
   }
-};
+}
 
-let mapDispatchToProps = (dispatch) => {
-  return {
+const mapDispatchToProps = () => {
+  return {}
+}
 
-  }
-};
+const VideoSectionContainer = connect(mapStateToProps, mapDispatchToProps)(VideoSectionSwitchContainer)
 
-const VideoSectionContainer = connect(mapStateToProps, mapDispatchToProps)(VideoSectionSwitchContainer);
-
-export default VideoSectionContainer;
+export default VideoSectionContainer

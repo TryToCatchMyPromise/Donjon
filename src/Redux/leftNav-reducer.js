@@ -1,137 +1,135 @@
 const initialState = {
-  sectionNames:{
+  sectionNames: {
     main: [
       {
         text: 'Начало',
-        hash: '#start',
+        hash: '#start'
       },
       {
         text: 'Разделы',
-        hash: '#image_transfer',
+        hash: '#image_transfer'
       },
       {
         text: 'История',
-        hash: '#history',
+        hash: '#history'
       },
       {
         text: 'Инфографика',
-        hash: '#infographics',
+        hash: '#infographics'
       },
       {
         text: 'Конец',
-        hash: '#end',
-      },
+        hash: '#end'
+      }
     ],
     hotel: [
       {
         text: 'Привет',
-        hash: '#start',
+        hash: '#start'
       },
       {
         text: 'Я',
-        hash: '#image_transfer',
+        hash: '#image_transfer'
       },
       {
         text: 'Боковое',
-        hash: '#history',
+        hash: '#history'
       },
       {
         text: 'Меню',
-        hash: '#infographics',
+        hash: '#infographics'
       },
       {
         text: 'Ура!',
-        hash: '#end',
-      },
+        hash: '#end'
+      }
     ],
     restaurant: [
       {
         text: 'Привет',
-        hash: '#start',
+        hash: '#start'
       },
       {
         text: 'Я',
-        hash: '#image_transfer',
+        hash: '#image_transfer'
       },
       {
         text: 'Боковое',
-        hash: '#history',
+        hash: '#history'
       },
       {
         text: 'Меню',
-        hash: '#infographics',
+        hash: '#infographics'
       },
       {
         text: 'Ура!',
-        hash: '#end',
+        hash: '#end'
       },
       {
         text: 'Шестой пункт',
-        hash: '#endd',
-      },
+        hash: '#endd'
+      }
     ],
     services: [
       {
         text: 'Привет',
-        hash: '#start',
+        hash: '#start'
       },
       {
         text: 'Я',
-        hash: '#image_transfer',
+        hash: '#image_transfer'
       },
       {
         text: 'Боковое',
-        hash: '#history',
+        hash: '#history'
       },
       {
         text: 'Меню',
-        hash: '#infographics',
+        hash: '#infographics'
       },
       {
         text: 'Ура!',
-        hash: '#end',
+        hash: '#end'
       },
       {
         text: 'Шестой пункт',
-        hash: '#endd',
+        hash: '#endd'
       },
       {
         text: 'Седьмой пункт',
-        hash: '#endd',
-      },
+        hash: '#endd'
+      }
     ],
     contacts: [
       {
         text: 'Не',
-        hash: '#start',
+        hash: '#start'
       },
       {
         text: 'Забыть',
-        hash: '#image_transfer',
+        hash: '#image_transfer'
       },
       {
         text: 'Пофиксить',
-        hash: '#history',
+        hash: '#history'
       },
       {
         text: 'Хэш',
-        hash: '#infographics',
+        hash: '#infographics'
       },
       {
         text: 'Линки',
-        hash: '#end',
-      },
-    ],
+        hash: '#end'
+      }
+    ]
   }
-
-};
+}
 
 const leftNavReducer = (state = initialState, action) => {
   switch (action.type) {
     default:
-      return state;
+      return state
   }
-};
+}
 
-
-export default leftNavReducer;
+export default leftNavReducer

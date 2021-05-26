@@ -34,13 +34,14 @@ module.exports = {
     'react/destructuring-assignment': [2, 'always', {ignoreClassFields: true}],
     'react/display-name': 'off',
     'react/forbid-prop-types': 'off',
-    'react/jsx-filename-extension': [1, {extensions: ['.ts', '.tsx']}],
+    'react/jsx-filename-extension': [1, {extensions: ['.ts', '.tsx', '.jsx']}],
     'react/jsx-props-no-spreading': 'off',
     'react/jsx-uses-react': 'off',
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/require-default-props': 'off',
-    'react/static-property-placement': 'off'
+    'react/static-property-placement': 'off',
+    'no-plusplus': 'off'
   },
   settings: {
     react: {
@@ -49,7 +50,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['**/*.{ts,tsx}'],
+      files: ['**/*.{ts,tsx, js, jsx}'],
       env: {
         browser: true,
         es6: true,

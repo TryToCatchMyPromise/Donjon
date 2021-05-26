@@ -1,18 +1,16 @@
-import React from "react";
-import {connect} from "react-redux";
-import ContactsPage from "src/Page Structure/Pages content/contacts/ContactsPage";
+import {connect} from 'react-redux'
+import ContactsPage from 'src/Page Structure/Pages content/contacts/ContactsPage'
 
-
-let mapStateToProps = (state) => {
+const mapStateToProps = (state) => {
   return {
-    contacts: state.contacts,
+    contacts: state.contacts
   }
-};
+}
 
-let mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = () => {
+  return null
+}
 
-};
+const ContactsPageContainer = connect(mapStateToProps, mapDispatchToProps)(ContactsPage)
 
-const ContactsPageContainer = connect(mapStateToProps, mapDispatchToProps)(ContactsPage);
-
-export default ContactsPageContainer;
+export default ContactsPageContainer

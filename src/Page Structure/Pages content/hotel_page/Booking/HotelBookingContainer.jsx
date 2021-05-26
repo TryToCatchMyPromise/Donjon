@@ -1,18 +1,16 @@
-import React from "react";
-import {connect} from "react-redux";
-import HotelBooking from "src/Page Structure/Pages content/hotel_page/Booking/HotelBooking";
+import {connect} from 'react-redux'
+import HotelBooking from 'src/Page Structure/Pages content/hotel_page/Booking/HotelBooking'
 
-
-let mapStateToProps = (state) => {
+const mapStateToProps = (state) => {
   return {
-    contacts: state.contacts,
+    contacts: state.contacts
   }
-};
+}
 
-let mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = () => {
+  return null
+}
 
-};
+const HotelBookingContainer = connect(mapStateToProps, mapDispatchToProps)(HotelBooking)
 
-const HotelBookingContainer = connect(mapStateToProps, mapDispatchToProps)(HotelBooking);
-
-export default HotelBookingContainer;
+export default HotelBookingContainer

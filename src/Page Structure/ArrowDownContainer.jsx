@@ -1,19 +1,16 @@
-import React from "react";
-import {connect} from "react-redux";
-import ArrowDownSwitchContainer from "src/Page Structure/ArrowDownSwitchContainer";
+import {connect} from 'react-redux'
+import ArrowDownSwitchContainer from 'src/Page Structure/ArrowDownSwitchContainer'
 
 const mapStateToProps = (state) => {
   return {
-    arrowDown: state.arrowDown,
+    arrowDown: state.arrowDown
   }
-};
+}
 
-const mapDispatchToProps = (dispatch) => {
-  return {
+const mapDispatchToProps = () => {
+  return {}
+}
 
-  }
-};
+const ArrowDownContainer = connect(mapStateToProps, mapDispatchToProps)(ArrowDownSwitchContainer)
 
-const ArrowDownContainer = connect(mapStateToProps, mapDispatchToProps)(ArrowDownSwitchContainer);
-
-export default ArrowDownContainer;
+export default ArrowDownContainer

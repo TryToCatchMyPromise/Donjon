@@ -1,18 +1,16 @@
-import React from "react";
-import {connect} from "react-redux";
-import ImageTransfer from "src/Page Structure/Pages content/main_page/Image Transfer/ImageTransfer";
+import {connect} from 'react-redux'
+import ImageTransfer from 'src/Page Structure/Pages content/main_page/Image Transfer/ImageTransfer'
 
-
-let mapStateToProps = (state) => {
+const mapStateToProps = (state) => {
   return {
-    contacts: state.contacts,
+    contacts: state.contacts
   }
-};
+}
 
-let mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = () => {
+  return null
+}
 
-};
+const ImageTransferContainer = connect(mapStateToProps, mapDispatchToProps)(ImageTransfer)
 
-const ImageTransferContainer = connect(mapStateToProps, mapDispatchToProps)(ImageTransfer);
-
-export default ImageTransferContainer;
+export default ImageTransferContainer

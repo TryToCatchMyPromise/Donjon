@@ -1,18 +1,16 @@
-import React from "react";
-import {connect} from "react-redux";
-import ServicesPage from "src/Page Structure/Pages content/services_page/ServicesPage";
+import {connect} from 'react-redux'
+import ServicesPage from 'src/Page Structure/Pages content/services_page/ServicesPage'
 
-
-let mapStateToProps = (state) => {
+const mapStateToProps = (state) => {
   return {
-    contacts: state.contacts,
+    contacts: state.contacts
   }
-};
+}
 
-let mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = () => {
+  return null
+}
 
-};
+const ServicesPageContainer = connect(mapStateToProps, mapDispatchToProps)(ServicesPage)
 
-const ServicesPageContainer = connect(mapStateToProps, mapDispatchToProps)(ServicesPage);
-
-export default ServicesPageContainer;
+export default ServicesPageContainer

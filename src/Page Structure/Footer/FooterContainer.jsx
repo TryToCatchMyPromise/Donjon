@@ -1,18 +1,16 @@
-import React from "react";
-import {connect} from "react-redux";
-import Footer from "src/Page Structure/Footer/Footer";
+import {connect} from 'react-redux'
+import Footer from 'src/Page Structure/Footer/Footer'
 
-
-let mapStateToProps = (state) => {
+const mapStateToProps = (state) => {
   return {
-    contacts: state.contacts,
+    contacts: state.contacts
   }
-};
+}
 
-let mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = () => {
+  return null
+}
 
-};
+const FooterContainer = connect(mapStateToProps, mapDispatchToProps)(Footer)
 
-const FooterContainer = connect(mapStateToProps, mapDispatchToProps)(Footer);
-
-export default FooterContainer;
+export default FooterContainer

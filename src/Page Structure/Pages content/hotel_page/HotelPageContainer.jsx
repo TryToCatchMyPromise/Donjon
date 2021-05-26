@@ -1,18 +1,16 @@
-import React from "react";
-import {connect} from "react-redux";
-import HotelPage from "src/Page Structure/Pages content/hotel_page/HotelPage";
+import {connect} from 'react-redux'
+import HotelPage from 'src/Page Structure/Pages content/hotel_page/HotelPage'
 
-
-let mapStateToProps = (state) => {
+const mapStateToProps = (state) => {
   return {
-    contacts: state.contacts,
+    contacts: state.contacts
   }
-};
+}
 
-let mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = () => {
+  return null
+}
 
-};
+const HotelPageContainer = connect(mapStateToProps, mapDispatchToProps)(HotelPage)
 
-const HotelPageContainer = connect(mapStateToProps, mapDispatchToProps)(HotelPage);
-
-export default HotelPageContainer;
+export default HotelPageContainer
